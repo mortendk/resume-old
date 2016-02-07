@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>legend fun...</title>
+  <style type="text/css" media="screen">
+  #fix legend{margin:0; display:block; padding:0;}
+  #fix fieldset{margin:30px 0 0 0; padding:30px 0 10px 0; border:none; width:100%; background:#Fdd;display:block; position: relative; top:0px; left:0;}
+    /*the margin top is set to push down the "real" content of the form 
+    position relative & block definition is nessesary to battle the evil ness of mulbible browsers... 
+    */
+  #fix legend span, #fix legend a{
+      height:20px;
+      background:#FFD; 
+      color:#d0d;
+      display:block; 
+      width:90%;
+      position: absolute;
+      left:0;
+      top:0px\9;/*ie7 & ie8 8 ugly hack thanx to FF FF goes nuts of theres a top:0; so to correct that we have to add a selector for ie8*/
+      padding:0 0 0 10px;
+      border-bottom: 1px solid #f0f;
+     }
+     label{margin:0 0 0 20px;}
+  </style>
+</head>
+<body>
+
+
+  <form action="" method="get" accept-charset="utf-8">
+
+    <fieldset id="legend-span" class="">
+      <legend>Legend</legend>
+      <label>Label</label> 
+      <input type="text" name="some_name" value="" id="some_name">
+    </fieldset>
+
+</form>
+<form action="" id="fix" method="get" accept-charset="utf-8">
+
+  <fieldset id="legend-span" class="">
+    <legend><span>Legend + span</span></legend>
+    <label>Label</label> 
+    <input type="text" name="some_name" value="" id="some_name">
+  </fieldset>
+
+
+  <fieldset id="legend-link" class="">
+    <legend><a href="#">Legend link</a></legend>
+    <label>Label</label> 
+    <input type="text" name="some_name" value="" id="some_name">
+  </fieldset>
+
+  <p><input type="submit" value="Continue &rarr;"></p>
+</form>
+
+<span>span</span>
+
+<pre>
+
+resources
+http://www.tjkdesign.com/articles/how_to_position_the_legend_element.asp
+http://www.tyssendesign.com.au/articles/css/legends-of-style-revised/
+</pre>
+
+</body>
+</html>

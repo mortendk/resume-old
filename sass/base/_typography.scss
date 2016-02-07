@@ -1,0 +1,246 @@
+/*
+Typography
+
+For the love of type
+
+Styleguide 2.0
+*/
+
+//generel fontstacks
+@include font("Lato", "../fonts/lato/Lato-Regular");
+@include font("lato-black", "../fonts/lato/Lato-Black");
+@include font("Lato-BlackItalic", "../fonts/lato/Lato-BlackItalic");
+/* Mad skills yo!: */
+
+$sans-serif : "Lato", Helvetica, Arial, sans-serif;
+$serif :      "Droid Serif", Georgia, serif;
+$monospace :  "Monaco", "Courier New", monospace;
+
+$fontbody: "Lato", sans-serif;
+$font-italic: "Lato", sans-serif;
+$font-bold: "Lato", sans-serif;
+
+$fontsize: 1.8rem;
+$lineheight: 2.5rem;
+
+html {
+  font-size: 62.5%; // 1em = 10px
+}
+
+body{
+  font-family: $fontbody;
+  color: $fontcolor;
+  font-size: $fontsize;
+  line-height: $lineheight;
+}
+
+/*
+Header
+
+Use the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for defining the headings.
+
+:hover    - Highlight the button when hovered.
+:active    - active
+
+Markup:
+<h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+<h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+<h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+<h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+<h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<h1><a href="foo {$modifiers}">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+<h2><a href="foo {$modifiers}">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+<h3><a href="foo {$modifiers}">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+<h4><a href="foo {$modifiers}">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+<h5><a href="foo {$modifiers}">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+<h6><a href="foo {$modifiers}">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+
+Styleguide 2.1
+*/
+
+h1,h2, h3, h4, h5, h6{
+  @include linkcolor($linkcolor, $hover:$linkcolorhover, $decorationhover:$red);
+  color: $titlecolor;
+  line-height:1;
+  margin:0 0 2rem 0;
+  font-style: normal;
+}
+h1{
+  font-size:7.2rem;
+  text-align: center;
+  font-family: Lato-BlackItalic;
+  line-height: 8.6rem;
+}
+h2{
+  font-size:4rem;
+  text-align: center;
+  font-family: Lato-BlackItalic;
+}
+h3{
+  font-size:2rem;
+}
+h4 {
+ font-size:2.2rem;
+}
+h5 {
+ font-size:2.2rem;
+}
+h6 {
+ font-size:2rem;
+}
+
+/*
+Paragraphs
+
+Uses the <code>&lt;p&gt;</code>
+
+.lead    - Stand out text
+.small    - small text
+
+Markup:
+<div class="{$modifiers}">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  <a href="#">read more</a>  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+</div>
+
+Styleguide 2.3
+*/
+
+p{
+  padding:1rem 0;
+}
+
+%lead,
+.lead{
+  font-size: 2rem;
+
+}
+.small,
+%small{
+  font-size: 1rem
+}
+
+
+blockquote{
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color:$bluesteel;
+  font-style: italic
+}
+
+
+/*
+pre
+
+pre & code
+
+Markup:
+<pre>foo</pre>
+
+Styleguide 2.5
+*/
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; //Address odd `em`-unit font size rendering in all browsers.
+}
+
+pre{
+  color:$black;
+  background:$white;
+  border:1px solid darken($white, 10%);
+  @include border-radius(3px);
+  padding:1rem;
+  min-width:80%;
+  transition: all 1s;
+  overflow: hidden;
+  // white-space: pre-wrap;
+}
+
+pre:hover{
+  width:100%;
+  background:lighten($blue, 55%);;
+}
+
+
+/*
+text variations
+
+descrption.
+
+.button - bu
+:hover - hover state
+:active - active state
+:disable - disabled state
+.foo    - Indicate that the button is the primary feature of this form.
+
+Markup:
+<a href="#" class="button {$modifiers}">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+
+Styleguide 2.5
+*/
+mark {
+  background: #ff0; //Address styling not present in IE 8/9.
+  color: #000;
+}
+
+small {
+  font-size: 80%; //Address inconsistent and variable font size in all browsers.
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0; //Prevent `sub` and `sup` affecting `line-height` in all browsers.
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted; //Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+}
+dfn {
+  font-style: italic; // Address styling not present in Safari and Chrome.
+}
+
+address{
+  font-style: normal;
+  color:$gray-light;
+  font-size: 3rem;
+  line-height: 4.5rem
+}

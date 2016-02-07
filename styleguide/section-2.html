@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Yggdrasil Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+  <!-- <link rel="stylesheet" href="public/kss.css"> -->
+  <link rel="stylesheet" href="public/font-awesome.css">
+  <link rel="stylesheet" href="public/styleguide.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body class="styleguide-global">
+  <!-- navigation   -->
+  <header role="bannerinfo" class="layout-sg-header">
+    <nav class="styleguide__menu">
+    <a href="index.html">Styleguide</a>
+    
+      <a href="section-1.html">Base</a>
+    
+      <a href="section-2.html">Typography</a>
+    
+      <a href="section-3.html">Color scheme</a>
+    
+      <a href="section-20.html">Form</a>
+    
+      <a href="section-21.html">mjølner - mjolnir layout system</a>
+    
+      <a href="section-30.html">Mixins</a>
+    
+    </nav>
+  </header>
+
+  <!-- /navigation -->
+
+  <main role="main" class="layout-sg-main">
+
+    <aside class="layout-sg-sidebar">
+      <!-- nav sub -->
+      <nav class="styleguide__submenu">
+        
+        <ul>
+          
+          
+          
+          
+          
+          <li>
+            <a href="#section-2.1" title="2.1 Header">Header</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-2.3" title="2.3 Paragraphs">Paragraphs</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-2.4" title="2.4 links colors">links colors</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-2.5" title="2.5 pre">pre</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-2.5" title="2.5 text variations">text variations</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-2.6" title="2.6 Selection color">Selection color</a>
+          </li>
+          
+          
+        </ul>
+        
+      </nav>
+      <!-- nav sub -->
+    </aside>
+
+    <div class="layout-sg-content">
+
+      
+
+        
+          
+          <div class="styleguide-section styleguide--depth-1">
+            <h1 class="styleguide-section__title">Typography</h1>
+            <span class="styleguide__ref">2</span>
+          </div>
+          
+
+            
+                
+                  <p>For the love of type</p>
+
+                
+            
+           
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.1">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Header</h2>
+            <span class="styleguide__ref">2.1</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Use the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for defining the headings.</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+<h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+<h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+<h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+<h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<h1><a href="foo {$modifiers}">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+<h2><a href="foo {$modifiers}">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+<h3><a href="foo {$modifiers}">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+<h4><a href="foo {$modifiers}">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+<h5><a href="foo {$modifiers}">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+<h6><a href="foo {$modifiers}">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:hover</span>
+                  <p>Highlight the button when hovered.</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+<h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+<h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+<h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+<h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<h1><a href="foo pseudo-class-hover">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+<h2><a href="foo pseudo-class-hover">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+<h3><a href="foo pseudo-class-hover">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+<h4><a href="foo pseudo-class-hover">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+<h5><a href="foo pseudo-class-hover">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+<h6><a href="foo pseudo-class-hover">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :hover
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:active</span>
+                  <p>active</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+<h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+<h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+<h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+<h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<h1><a href="foo pseudo-class-active">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+<h2><a href="foo pseudo-class-active">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+<h3><a href="foo pseudo-class-active">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+<h4><a href="foo pseudo-class-active">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+<h5><a href="foo pseudo-class-active">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+<h6><a href="foo pseudo-class-active">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :active
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;h1&gt;h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h1&gt;
+&lt;h2&gt;h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h2&gt;
+&lt;h3&gt;h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h3&gt;
+&lt;h4&gt;h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h4&gt;
+&lt;h5&gt;h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h5&gt;
+&lt;h6&gt;h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/h6&gt;
+&lt;h1&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h1&gt;
+&lt;h2&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h3&gt;
+&lt;h4&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h4&gt;
+&lt;h5&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h5&gt;
+&lt;h6&gt;&lt;a href=&quot;foo {$modifiers}&quot;&gt;h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/a&gt;&lt;/h6&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.3">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Paragraphs</h2>
+            <span class="styleguide__ref">2.3</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Uses the <code>&lt;p&gt;</code></p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <div class="{$modifiers}">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  <a href="#">read more</a>  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+</div>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lead</span>
+                  <p>Stand out text</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="lead">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  <a href="#">read more</a>  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lead
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.small</span>
+                  <p>small text</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="small">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  <a href="#">read more</a>  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .small
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;div class=&quot;{$modifiers}&quot;&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  &lt;a href=&quot;#&quot;&gt;read more&lt;/a&gt;  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+&lt;/p&gt;
+&lt;p&gt;
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.4">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>links colors</h2>
+            <span class="styleguide__ref">2.4</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Links in all its magic glory</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <a href="#" class="{$modifiers}">link</a>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:hover</span>
+                  <p>hover</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="pseudo-class-hover">link</a>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :hover
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:focus</span>
+                  <p>Focus</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="pseudo-class-focus">link</a>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :focus
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:active</span>
+                  <p>Active</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="pseudo-class-active">link</a>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :active
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:visited</span>
+                  <p>Visited</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="pseudo-class-visited">link</a>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :visited
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;a href=&quot;#&quot; class=&quot;{$modifiers}&quot;&gt;link&lt;/a&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.5">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>pre</h2>
+            <span class="styleguide__ref">2.5</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>pre &amp; code</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <pre>foo</pre>
+              </div>
+
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;pre&gt;foo&lt;/pre&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.5">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>text variations</h2>
+            <span class="styleguide__ref">2.5</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>descrption.</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <a href="#" class="button {$modifiers}">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.button</span>
+                  <p>bu</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button button">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .button
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:hover</span>
+                  <p>hover state</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button pseudo-class-hover">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :hover
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:active</span>
+                  <p>active state</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button pseudo-class-active">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :active
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">:disable</span>
+                  <p>disabled state</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button pseudo-class-disable">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  :disable
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.foo</span>
+                  <p>Indicate that the button is the primary feature of this form.</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button foo">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .foo
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;a href=&quot;#&quot; class=&quot;button {$modifiers}&quot;&gt;Link Button&lt;/a&gt;
+&lt;mark&gt;Maecenas faucibus mollis interdum.&lt;mark&gt;
+&lt;small&gt;Maecenas faucibus mollis interdum.&lt;small&gt;
+&lt;sub&gt;Maecenas faucibus mollis interdum.&lt;sub&gt;
+&lt;sup&gt;Maecenas faucibus mollis interdum.&lt;sup&gt;
+&lt;strong&gt;Maecenas faucibus mollis interdum.&lt;strong&gt;
+&lt;b&gt;Maecenas faucibus mollis interdum.&lt;b&gt;
+&lt;em&gt;Maecenas faucibus mollis interdum.&lt;em&gt;
+&lt;i&gt;Maecenas faucibus mollis interdum.&lt;i&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-2.6">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Selection color</h2>
+            <span class="styleguide__ref">2.6</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>descrption.</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <a href="#" class="button {$modifiers}">Link Button</a>
+<button class="button {$modifiers}">Button Element</button>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">::selection</span>
+                  <p>selection color</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <a href="#" class="button pseudo-class-:selection">Link Button</a>
+<button class="button pseudo-class-:selection">Button Element</button>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  ::selection
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;a href=&quot;#&quot; class=&quot;button {$modifiers}&quot;&gt;Link Button&lt;/a&gt;
+&lt;button class=&quot;button {$modifiers}&quot;&gt;Button Element&lt;/button&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+      
+    </div>
+
+  </main>
+
+  <footer class="layout-sg-footer">
+    <div class="layout-sg-footer__content">
+      Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="public/jquery.min.js"></script>
+  <script src="public/kss.js"></script>
+  <!-- code colorscheme -->
+  <link rel="stylesheet" href="public/highlight/styles/monokai_sublime.css">
+  <script src="public/highlight/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+
+
+      //-------------------------
+      //scroll to same # on a page
+      //--------------------------
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+
+
+  </script>
+</body>
+</html>

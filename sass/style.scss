@@ -1,0 +1,69 @@
+/*
+Style.css
+file to gather & collect all of the files
+*/
+
+// -- get Partials -------------------------------------------------------------
+@import "compass";
+@import "singularitygs";
+@import "breakpoint";
+
+@import "config"; //gets all the global config for grid & colors
+
+
+//-- mixins & common elements --------------------------------------------------
+@import "mixin";
+@import "lib/font-awesome/font-awesome";
+// @import "lib/animate";
+// @import "lib/flexslider";
+
+@import "base/base";        //basic classes
+@import "base/typography";  //worldwide typography
+@import "base/colors";      //color setup mainly for the styleguide
+@import "base/form";        //color setup mainly for the styleguide
+
+// -- Design & type elements ---------------------------------------------------
+@import "design/design";
+
+@import "grid/grid";
+@import "grid/helpers";
+
+
+//design elements
+
+/*
+@import "design/graphicstyles";
+
+// -- sprites ------------------------------------------------------------------
+// this is uncommented until all design elements is defined ;)
+//@import "compass/utilities/sprites";
+//http://compass-style.org/help/tutorials/spriting/
+//@import "icon/*.png";
+//@include all-icon-sprites;
+
+// -- components ---------------------------------------------------------------
+@import "component/buttons";
+@import "component/menu-mobile";
+// @import "component/menu-dropdown-skin";
+
+// -- Drupal stuff ---------------------------------------------------
+@import "component-drupal/breadcrumb";
+@import "component-drupal/message";
+
+
+@import "component-drupal/form";
+//@import "component-drupal/form-vertical-tabs";
+// @import "component-drupal/form-login";
+@import "component-drupal/search";
+// @import "component-drupal/displaysuite";
+
+@import "component-drupal/pager";
+@import "component-drupal/tabs";
+@import "component-drupal/table";
+@import "component-drupal/views";
+
+// -- beware of the dragons ----------------------------------------------------
+
+
+@import "dragons";
+*/

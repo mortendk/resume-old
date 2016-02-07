@@ -1,0 +1,100 @@
+/* ----------------------------------------------------------------
+	----	D R U P A L  S T U F F ----
+----------------------------------------------------------------*/
+/*block admin*/
+.block-region{ text-align: center; font-size:14px;  color:#303; background: #909;border: 1px dashed #f0f;  padding:0; margin:0;}
+.block-admin{border: 1px solid #999;}
+#blocks td.region{font-weight:bold; border-bottom: 1px solid #999; background-color: #666;}
+#blocks tr.even{background-color: #DDD;}
+
+/*tabs*/
+.tabs.primary{background-color: #ccc; float:right; display:block;}
+ul.primary{}
+ul.primary li{float:left; margin:0 5px;}
+ul.primary li {}
+
+/* Leaf, collapsed, and expanded icons used for navigation*/
+.block li.leaf, ul.menu li.leaf { list-style-image: url('images/menu-leaf.gif');}
+.block li.collapsed, ul.menu li.collapsed {list-style-image: url('images/menu-collapsed.gif');}
+.block li.expanded, ul.menu li.expanded { list-style-image: url('images/menu-expanded.gif');}
+.block li a.active {text-decoration: none;}
+.block ul li {list-style-image: url('images/bullet.gif');}
+
+/* Status and Error icons */
+/* Alerts, Status, Help Messages  */
+.messages {min-height: 32px; padding: 1.3em 1em .3em 52px; border: 2px solid #ddd; background: #eee; margin: 10px 0;}
+div.error { border: 2px solid #F00;}
+.messages ul {  padding: 0 0 0 20px;  margin: 0;}
+div.status {background-image: url('images/dialog-information_i.gif'); background-repeat: no-repeat;  background-position: .5em 50%;}
+div.error { background-image: url('images/dialog-warning.gif'); background-repeat: no-repeat;  background-position: .5em 50%;}
+
+/*links*/
+.links{}
+.links li{float:left;}
+.links li.comment_add{background-color: #DDD;}
+.links li.node_read_more{background-color: #ccc;}
+.links li.log_usernames_blog{}
+.links li.fasttoggle_status{}
+.links li.fasttoggle_sticky{}
+.links li.fasttoggle_promote{}
+
+/*
+** Autocomplete styles
+*/
+/* Suggestion list */
+#autocomplete {position: absolute;border: 1px solid;overflow: hidden;z-index: 100;}
+#autocomplete ul {margin: 0;padding: 0;list-style: none;}
+#autocomplete li {background: #fff;color: #000;white-space: pre;cursor: default;}
+#autocomplete li.selected {background: #0072b9;color: #fff;}
+/* Animated throbber */
+html.js input.form-autocomplete {background-image: url('images/throbber.gif');background-repeat: no-repeat;background-position: 100% 2px;}
+html.js input.throbbing {background-position: 100% -18px;}
+
+/*
+** Collapsing fieldsets
+*/
+html.js fieldset.collapsed {border-bottom-width: 0;border-left-width: 0;border-right-width: 0;margin-bottom: 0;height: 1em;}
+html.js fieldset.collapsed * {display: none;}
+html.js fieldset.collapsed legend {display: block;}
+html.js fieldset.collapsible legend a {padding-left: 15px;background: url('images/menu-expanded.gif') 5px 75% no-repeat;}
+html.js fieldset.collapsed legend a {background-image: url('images/menu-collapsed.gif');background-position: 5px 50%;}
+/* Note: IE-only fix due to '* html' (breaks Konqueror otherwise). */
+* html.js fieldset.collapsed legend,
+* html.js fieldset.collapsed legend *,
+* html.js fieldset.collapsed table * {display: inline;}
+html.js fieldset.collapsible legend a {display: block;}
+/* Avoid jumping around due to margins collapsing into collapsible fieldset border */
+html.js fieldset.collapsible .fieldset-wrapper {overflow: auto;}
+
+/*
+** Resizable text areas
+*/
+.resizable-textarea {width: 95%;}
+.resizable-textarea .grippie {height: 9px;overflow: hidden;background: #eee url('images/grippie.png') no-repeat center 2px;border: 1px solid #ddd;border-top-width: 0;cursor: s-resize;}
+html.js .resizable-textarea textarea {margin-bottom: 0;width: 100%;display: block;}
+
+/*
+** Progressbar styles
+*/
+.progress {font-weight: bold;}
+.progress .bar {background: #fff url('images/progress.gif');border: 1px solid #00375a;height: 1.5em;margin-top: 0.2em;}
+.progress .filled {background: #0072b9;height: 1em;border-bottom: 0.5em solid #004a73;width: 0%;}
+.progress .percentage {float: right;}
+
+/*forms*/
+#node-form{clear:both; padding:10px 15px; margin:0; margin:0; font: 1em "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
+.form-required{font-size:15px;font-weight:bold; color: maroon;}
+.form-item{margin:0; padding:2px 0;}
+
+.form-item label.option{width:auto; float: none;}
+.form-item div.resizable-textarea{clear:both; padding:0 0 0 50px; width:90%;}
+
+legend{font-weight: bold; color:#666;;}
+fieldset{margin:20px 0 0 0; border: 1px solid #ddd; font: 12px "Lucida Grande", "Trebuchet MS", Verdana, sans-serif;}
+.description {display: block;}
+.form-submit{margin:0 0 0 20px;}
+.form-checkboxes, .form-radios {clear:both; margin:0 0 0 20px;}
+
+#edit-preview{border: 2px solid #333; color: #333;}
+#edit-submit {border: 2px solid #5D946A; color: ##5D946A;}
+#edit-delete {background: none;  border: none; color: #900;}

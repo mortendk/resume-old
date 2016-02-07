@@ -1,0 +1,13 @@
+{
+  "name": "mortendkcv",
+  "version": "0.1.0",
+  "dependencies": {
+    "html5shiv": "latest",
+    "fontawesome": "latest",
+    "normalize.css": "~3.0.1",
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {
+    "html5shiv": "~3.7.1"
+  }
+}

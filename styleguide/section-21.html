@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Yggdrasil Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+  <!-- <link rel="stylesheet" href="public/kss.css"> -->
+  <link rel="stylesheet" href="public/font-awesome.css">
+  <link rel="stylesheet" href="public/styleguide.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body class="styleguide-global">
+  <!-- navigation   -->
+  <header role="bannerinfo" class="layout-sg-header">
+    <nav class="styleguide__menu">
+    <a href="index.html">Styleguide</a>
+    
+      <a href="section-1.html">Base</a>
+    
+      <a href="section-2.html">Typography</a>
+    
+      <a href="section-3.html">Color scheme</a>
+    
+      <a href="section-20.html">Form</a>
+    
+      <a href="section-21.html">mjølner - mjolnir layout system</a>
+    
+      <a href="section-30.html">Mixins</a>
+    
+    </nav>
+  </header>
+
+  <!-- /navigation -->
+
+  <main role="main" class="layout-sg-main">
+
+    <aside class="layout-sg-sidebar">
+      <!-- nav sub -->
+      <nav class="styleguide__submenu">
+        
+        <ul>
+          
+          
+          
+          
+          
+          <li>
+            <a href="#section-21.1" title="21.1 Layout Float">Layout Float</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-21.1" title="21.1 Layouts for fields in multiple settings Small, medium, large">Layouts for fields in multiple settings Small, medium, large</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-21.2" title="21.2 Layout Widths">Layout Widths</a>
+          </li>
+          
+          
+          
+          <li>
+            <a href="#section-21.2" title="21.2 Layout Row">Layout Row</a>
+          </li>
+          
+          
+        </ul>
+        
+      </nav>
+      <!-- nav sub -->
+    </aside>
+
+    <div class="layout-sg-content">
+
+      
+
+        
+          
+          <div class="styleguide-section styleguide--depth-1">
+            <h1 class="styleguide-section__title">mjølner - mjolnir layout system</h1>
+            <span class="styleguide__ref">21</span>
+          </div>
+          
+
+            
+                
+                  <p>yes a grid / layout system build on singularitygs</p>
+
+                
+            
+           
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-21.1">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Layout Float</h2>
+            <span class="styleguide__ref">21.1</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>The Layout Floats breaks down ul &gt; li, div, articles into a grid so it floats wonderfully without havgint to think about anything. Each LF breaks dirrently on the 3 breakpoints.</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <section class="{$modifiers}">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lf-2</span>
+                  <p>2 wide floating</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <section class="lf-2">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lf-2
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lf-3</span>
+                  <p>3 wide floating</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <section class="lf-3">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lf-3
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lf-4</span>
+                  <p>4 wide floating</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <section class="lf-4">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lf-4
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lf-5</span>
+                  <p>5 wide floating</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <section class="lf-5">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lf-5
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lf-6</span>
+                  <p>6 wide floating</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <section class="lf-6">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lf-6
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;section class=&quot;{$modifiers}&quot;&gt;
+  &lt;article&gt;cell 1&lt;/article&gt;
+  &lt;article&gt;cell 2&lt;/article&gt;
+  &lt;article&gt;cell 3&lt;/article&gt;
+  &lt;article&gt;cell 4&lt;/article&gt;
+  &lt;article&gt;cell 5&lt;/article&gt;
+  &lt;article&gt;cell 6&lt;/article&gt;
+  &lt;article&gt;cell 7&lt;/article&gt;
+  &lt;article&gt;cell 8&lt;/article&gt;
+  &lt;article&gt;cell 9&lt;/article&gt;
+  &lt;article&gt;cell 10&lt;/article&gt;
+  &lt;article&gt;cell 11&lt;/article&gt;
+  &lt;article&gt;cell 12&lt;/article&gt;
+&lt;section&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-21.1">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Layouts for fields in multiple settings Small, medium, large</h2>
+            <span class="styleguide__ref">21.1</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Description.
+
+</p>
+<p>.foo -a class</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <div class=".foo {$modifiers}">foobar</a>
+              </div>
+
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;div class=&quot;.foo {$modifiers}&quot;&gt;foobar&lt;/a&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-21.2">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Layout Widths</h2>
+            <span class="styleguide__ref">21.2</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Define widths for a single field in the full size</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <div class="gridtest {$modifiers}">
+  cell
+</div>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-1</span>
+                  <p>1 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-1">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-1
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-2</span>
+                  <p>2 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-2">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-2
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-3</span>
+                  <p>3 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-3">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-3
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-4</span>
+                  <p>4 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-4">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-4
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-5</span>
+                  <p>5 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-5">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-5
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-6</span>
+                  <p>6 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-6">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-6
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-7</span>
+                  <p>7 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-7">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-7
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-8</span>
+                  <p>8 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-8">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-8
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-9</span>
+                  <p>9 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-9">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-9
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-10</span>
+                  <p>10 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-10">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-10
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-11</span>
+                  <p>11 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-11">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-11
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lw-12</span>
+                  <p>12 wide</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lw-12">
+  cell
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lw-12
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;div class=&quot;gridtest {$modifiers}&quot;&gt;
+  cell
+&lt;/div&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+          
+          <!-- sub section -->
+          <section class="styleguide styleguide--depth-2" id="section-21.2">
+            <h2 class="styleguide__title"><i class="fa fa-cog"></i>Layout Row</h2>
+            <span class="styleguide__ref">21.2</span>
+          
+
+            
+              <div class="styleguide__description">
+                <i class="fa fa-info-circle"></i>
+                <p>Defines a layout for the wrapped elements. The layout will change based on the width of the largest elemnt (fx lr-4-8) we guess that the 8 is more important than 4 so in smaller version we place that first. The naming is based on the view in the large mode (the 12 grid)but changes in medium &amp; small. fx:</p>
+
+              </div>
+              <div class="styleguide__modifier styleguide__modifier--default">
+                <i class="fa fa-circle-o"></i>
+                <span class="styleguide__modifier-title">Default</span>
+              </div>
+
+              <div class="styleguide__example styleguide__example--default">
+                <div class="gridtest {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+              </div>
+
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-1-11</span>
+                  <p>small: each is 4 wide, medium: first is 1, second is 7.</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-1-11">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-1-11">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-1-11">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-1-11
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-2-10</span>
+                  <p>this is a 2-10</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-2-10">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-2-10">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-2-10">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-2-10
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-3-9</span>
+                  <p>this is a 3-9</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-3-9">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-3-9">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-3-9">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-3-9
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-4-8</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-4-8">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-4-8">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-4-8">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-4-8
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-5-7</span>
+                  <p>this is a</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-5-7">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-5-7">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-5-7">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-5-7
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-6-6</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-6-6">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-6-6">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-6-6">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-6-6
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-7-5</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-7-5">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-7-5">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-7-5">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-7-5
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-8-4</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-8-4">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-8-4">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-8-4">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-8-4
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-9-3</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-9-3">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-9-3">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-9-3">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-9-3
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-10-2</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-10-2">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-10-2">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-10-2">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-10-2
+                </div>
+                -->
+              
+
+                <div class="styleguide__modifier">
+                  <i class="fa fa-dot-circle-o"></i>
+                  <span class="styleguide__modifier-title">.lr-11-1</span>
+                  <p>this is a 4-8</p>
+
+                </div>
+
+                <div class="styleguide__example">
+                  <div class="gridtest lr-11-1">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small lr-11-1">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium lr-11-1">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+                </div>
+                <!--
+                <div class="styleguide-modifier__name">
+                  .lr-11-1
+                </div>
+                -->
+              
+                <div class="styleguide__markup">
+                  <i class="fa fa-html5 fa-lg"></i>
+                  <pre><code>&lt;div class=&quot;gridtest {$modifiers}&quot;&gt;
+  &lt;div&gt; cell 1&lt;/div&gt;
+  &lt;div&gt; cell 2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gridtest gridtest--small {$modifiers}&quot;&gt;
+  &lt;div&gt; cell 1&lt;/div&gt;
+  &lt;div&gt; cell 2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;gridtest gridtest--medium {$modifiers}&quot;&gt;
+  &lt;div&gt; cell 1&lt;/div&gt;
+  &lt;div&gt; cell 2&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                </div>
+            
+          
+            </section>
+          
+
+        
+      
+    </div>
+
+  </main>
+
+  <footer class="layout-sg-footer">
+    <div class="layout-sg-footer__content">
+      Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="public/jquery.min.js"></script>
+  <script src="public/kss.js"></script>
+  <!-- code colorscheme -->
+  <link rel="stylesheet" href="public/highlight/styles/monokai_sublime.css">
+  <script src="public/highlight/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+
+
+      //-------------------------
+      //scroll to same # on a page
+      //--------------------------
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+
+
+  </script>
+</body>
+</html>

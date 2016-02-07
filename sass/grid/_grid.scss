@@ -1,0 +1,632 @@
+/*
+mjølner - mjolnir layout system
+
+yes a grid / layout system build on singularitygs
+
+Styleguide 21.0
+*/
+
+//Base page Width
+%l-width,
+.l-width{
+  margin:0 auto;
+  @include breakpoint($small) { width: 98% }
+  @include breakpoint($medium){ width: 98% }
+  @include breakpoint($large) { width: 100%; max-width: $max-width }
+}
+
+/*
+Layout Widths
+
+Define widths for a single field in the full size
+
+.lw-1  - 1 wide
+.lw-2  - 2 wide
+.lw-3  - 3 wide
+.lw-4  - 4 wide
+.lw-5  - 5 wide
+.lw-6  - 6 wide
+.lw-7  - 7 wide
+.lw-8  - 8 wide
+.lw-9  - 9 wide
+.lw-10  - 10 wide
+.lw-11  - 11 wide
+.lw-12  - 12 wide
+
+Markup:
+<div class="gridtest {$modifiers}">
+  cell
+</div>
+
+Styleguide 21.2
+*/
+
+
+.gridtest{
+  @include background-grid($color: #999);
+  div{
+    height:3rem;
+    background:rgba($red, 0.7);
+  }
+  div:nth-of-type(2n){
+    background:rgba($blue, 0.7);
+  }
+}
+
+.gridtest--small{
+  border-top:5px solid $black;
+  @include background-grid($color: $yellow);
+}
+
+.gridtest--medium{
+  border-top:5px solid $black;
+  @include background-grid($color: $red-dark);
+}
+
+%lw-1,
+.lw-1{
+  @include breakpoint($large) { width: column-span(1,1);}
+}
+%lw-2,
+.lw-2{
+  @include breakpoint($large) { width: column-span(2, 1);}
+}
+%lw-3,
+.lw-3{
+  @include breakpoint($large) { width: column-span(3, 1);}
+}
+%lw-4,
+.lw-4{
+  @include breakpoint($large) { width: column-span(4, 1);}
+}
+%lw-5,
+.lw-5{
+  @include breakpoint($large) { width: column-span(5, 1);}
+}
+%lw-6,
+.lw-6{
+  @include breakpoint($large) { width: column-span(6, 1);}
+}
+%lw-7,
+.lw-7{
+  @include breakpoint($large) { width: column-span(7, 1);}
+}
+%lw-8,
+.lw-8{
+  @include breakpoint($large) { width: column-span(8, 1);}
+}
+%lw-9,
+.lw-9{
+  @include breakpoint($large) { width: column-span(9, 1);}
+}
+%lw-10,
+.lw-10{
+  @include breakpoint($large) { width: column-span(10, 1);}
+}
+%lw-11,
+.lw-11{
+  @include breakpoint($large) { width: column-span(11, 1);}
+}
+%lw-12,
+.lw-12{
+  @include breakpoint($large) { width: column-span(12, 1);}
+}
+
+%push-1,
+.push-1{
+
+}
+
+/*
+layout widths
+
+Description.
+.fifth  - 1/5  of the whole row
+.quart  - 1/4 of the whole row
+.third  - 1/3 of the whole row
+.half  - 1/2 of the whole row
+.full  - 1/3 of the whole row
+
+Markup:
+<div class=".foo {$modifiers}">foobar</a>
+
+Styleguide 20.0
+*/
+
+
+/*
+Layout Float
+
+The Layout Floats breaks down ul > li, div, articles into a grid so it floats wonderfully without havgint to think about anything. Each LF breaks dirrently on the 3 breakpoints.
+
+.lf-2   - 2 wide floating
+.lf-3   - 3 wide floating
+.lf-4   - 4 wide floating
+.lf-5   - 5 wide floating
+.lf-6   - 6 wide floating
+
+Markup:
+<section class="{$modifiers}">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+
+Styleguide 21.1
+*/
+@mixin layoutflow($gridspan, $break, $gridcontext:12){
+  > div,
+  > article,
+  > ul li,
+  > li{
+    @include float-span($gridspan, $grid: $gridcontext);
+  }
+  > div:nth-of-type(#{$break}n),
+  > article:nth-of-type(#{$break}n),
+  > ul li:nth-of-type(#{$break}n),
+  > li:nth-of-type(#{$break}n){
+    @include float-span($gridspan, last, $grid: $gridcontext);
+  }
+}
+//lf-2 -------------------------------------------------------------------------
+%lf-2,
+.lf-2{
+  @extend .cf;
+
+  @include breakpoint($small) {
+    @include layoutflow(2, 2, 4);
+  } //breakpoints small
+
+  @include breakpoint($medium) {
+    @include layoutflow(4, 2, 8);
+  }  //breakpoints medium
+
+  @include breakpoint($large) {
+    @include layoutflow(6, 2, 12);
+  } //breakpoints large
+
+}
+
+//lf-3 -------------------------------------------------------------------------
+%lf-3,
+.lf-3{
+  @extend .cf;
+
+  @include breakpoint($small) {
+    @include layoutflow(6, 2, 12);
+  } //breakpoints small
+
+  @include breakpoint($medium) {
+    @include layoutflow(6, 2, 12);
+  }  //breakpoints medium
+
+  @include breakpoint($large) {
+    @include layoutflow(4, 3, 12);
+  } //breakpoints large
+
+}
+
+//lf-4 -------------------------------------------------------------------------
+%lf-4,
+.lf-4{
+  @extend .cf;
+
+  @include breakpoint($small) {
+    @include layoutflow(6, 2, 12);
+  } //breakpoints small
+
+  @include breakpoint($medium) {
+    @include layoutflow(4, 3, 12);
+  }  //breakpoints medium
+
+  @include breakpoint($large) {
+    @include layoutflow(3, 4, 12);
+  } //breakpoints large
+
+}
+
+//lf-5 -------------------------------------------------------------------------
+%lf-5,
+.lf-5{
+  @extend .cf;
+
+  @include breakpoint($small) {
+    @include layoutflow(6, 2, 12);
+  } //breakpoints small
+
+  @include breakpoint($medium) {
+    @include layoutflow(2, 5, 10);
+  }  //breakpoints medium
+
+  @include breakpoint($large) {
+    @include layoutflow(2, 5, 10);
+  } //breakpoints large
+
+}
+
+//lf-5 -------------------------------------------------------------------------
+%lf-6,
+.lf-6{
+  @extend .cf;
+
+  @include breakpoint($small) {
+    @include layoutflow(6, 2, 12);
+  } //breakpoints small
+
+  @include breakpoint($medium) {
+    @include layoutflow(4, 3, 12);
+  }  //breakpoints medium
+
+  @include breakpoint($large) {
+    @include layoutflow(2, 6, 12);
+  } //breakpoints large
+
+}
+
+/*
+Layouts for fields in multiple settings Small, medium, large
+
+Description.
+
+.foo -a class
+
+Markup:
+<div class=".foo {$modifiers}">foobar</a>
+
+Styleguide 21.1
+*/
+
+.s-1_m-4_l-6{
+  @include breakpoint($small){
+
+  }//breaktpoint: $small
+
+  @include breakpoint($medium){
+
+  }//breaktpoint: $medium
+
+  @include breakpoint($large){
+
+  }//breaktpoint: $large
+
+
+}
+
+/*
+Layout Row 2 cells
+
+Defines a layout for the wrapped elements. The layout will change based on the width of the largest elemnt (fx lr-4-8) we guess that the 8 is more important than 4 so in smaller version we place that first. The naming is based on the view in the large mode (the 12 grid)but changes in medium & small. fx:
+
+.lr-1-11 - small: each is 4 wide, medium: first is 1, second is 7.
+.lr-2-10 - this is a 2-10
+.lr-3-9 - this is a 3-9
+.lr-4-8 - this is a 4-8
+.lr-5-7 - this is a
+.lr-6-6 - this is a 4-8
+.lr-7-5 - this is a 4-8
+.lr-8-4 - this is a 4-8
+.lr-9-3 - this is a 4-8
+.lr-10-2 - this is a 4-8
+.lr-11-1 - this is a 4-8
+
+Markup:
+<div class="gridtest {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+
+Styleguide 21.2
+*/
+
+%lr-1-11,
+.lr-1-11{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(1,1);}
+    @include breakpoint($large) {@include grid-span(1,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(7,2);}
+    @include breakpoint($large) {@include grid-span(11,2); }
+  }
+}
+
+%lr-2-10,
+.lr-2-10{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(2,1);}
+    @include breakpoint($large) {@include grid-span(2,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(6,3);}
+    @include breakpoint($large) {@include grid-span(10,3);}
+  }
+}
+
+%lr-3-9,
+.lr-3-9{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(3,1);}
+    @include breakpoint($large) {@include grid-span(3,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(4,4);}
+    @include breakpoint($large) {@include grid-span(9,4);}
+  }
+}
+
+%lr-4-8,
+.lr-4-8{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(3,1); }
+    @include breakpoint($large) {@include grid-span(4,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(5,4);}
+    @include breakpoint($large) {@include grid-span(8,5);}
+  }
+}
+
+%lr-5-7,
+.lr-5-7{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(4,1); }
+    @include breakpoint($large) {@include grid-span(5,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(4,5);}
+    @include breakpoint($large) {@include grid-span(7,6);}
+  }
+}
+
+%lr-6-6,
+.lr-6-6{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(4,1); }
+    @include breakpoint($large) {@include grid-span(6,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(4,5);}
+    @include breakpoint($large) {@include grid-span(6,7);}
+  }
+}
+
+%lr-7-5,
+.lr-7-5{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(4,1); }
+    @include breakpoint($large) {@include grid-span(7,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(4,5);}
+    @include breakpoint($large) {@include grid-span(5,8);}
+  }
+}
+
+%lr-8-4,
+.lr-8-4{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(5,1); }
+    @include breakpoint($large) {@include grid-span(8,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(3,6);}
+    @include breakpoint($large) {@include grid-span(4,9);}
+  }
+}
+
+%lr-9-3,
+.lr-9-3{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(6,1); }
+    @include breakpoint($large) {@include grid-span(9,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(2,7);}
+    @include breakpoint($large) {@include grid-span(3,10);}
+  }
+}
+
+%lr-10-2,
+.lr-10-2{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(7,1); }
+    @include breakpoint($large) {@include grid-span(10,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(1,8);}
+    @include breakpoint($large) {@include grid-span(2,11);}
+  }
+}
+
+%lr-11-1,
+.lr-11-1{
+  @extend .cf;
+  > div,
+  > article,
+  > section{
+    backgrund:$red;
+    @include grid-span(1, 1);
+    @include breakpoint($medium){@include grid-span(7,1); }
+    @include breakpoint($large) {@include grid-span(11,1);}
+  }
+  > div:nth-of-type(2n),
+  > article:nth-of-type(2n),
+  > section:nth-of-type(2n){
+    @include float-span(3, 2);
+    @include breakpoint($medium){@include grid-span(1,8);}
+    @include breakpoint($large) {@include grid-span(1,11);}
+  }
+}
+
+/*
+Layout Rows 3 cells
+
+Description.
+
+.lr-1-10-1  - 3 cells all awesome
+.lr-1-9-2  - 3 cells all awesome
+.lr-1-8-3  - 3 cells all awesome
+.lr-1-7-4  - 3 cells all awesome
+.lr-1-6-5  - 3 cells all awesome
+.lr-1-5-6  - 3 cells all awesome
+.lr-1-4-7  - 3 cells all awesome
+.lr-1-3-8  - 3 cells all awesome
+.lr-1-2-9  - 3 cells all awesome
+.lr-2-9-1  - 3 cells all awesome
+.lr-2-8-2  - 3 cells all awesome
+.lr-2-7-3  - 3 cells all awesome
+.lr-2-6-4  - 3 cells all awesome
+.lr-2-5-5  - 3 cells all awesome
+.lr-2-4-6  - 3 cells all awesome
+.lr-2-3-7  - 3 cells all awesome
+.lr-2-2-8  - 3 cells all awesome
+.lr-2-1-9  - 3 cells all awesome
+.lr-3-1-8  - 3 cells all awesome
+.lr-3-2-7  - 3 cells all awesome
+.lr-3-3-6  - 3 cells all awesome
+.lr-3-4-5  - 3 cells all awesome
+.lr-3-5-4  - 3 cells all awesome
+.lr-3-6-3  - 3 cells all awesome
+.lr-3-7-2  - 3 cells all awesome
+.lr-3-8-1  - 3 cells all awesome
+.lr-4-1-7  - 3 cells all awesome
+.lr-4-2-6 - 3 cells all awesome
+.lr-4-3-5  - 3 cells all awesome
+.lr-4-4-4  - 3 cells all awesome
+.lr-4-5-3  - 3 cells all awesome
+.lr-4-6-2  - 3 cells all awesome
+.lr-4-7-1  - 3 cells all awesome
+.lr-5-1-6  - 3 cells all awesome
+.lr-5-2-5 - 3 cells all awesome
+.lr-5-3-4  - 3 cells all awesome
+.lr-5-4-3  - 3 cells all awesome
+.lr-5-5-2  - 3 cells all awesome
+.lr-5-6-1  - 3 cells all awesome
+.lr-6-1-5  - 3 cells all awesome
+.lr-6-2-4 - 3 cells all awesome
+.lr-6-3-3  - 3 cells all awesome
+.lr-6-4-2  - 3 cells all awesome
+.lr-6-5-1  - 3 cells all awesome
+.lr-7-1-4  - 3 cells all awesome
+.lr-7-2-3 - 3 cells all awesome
+.lr-7-3-2  - 3 cells all awesome
+.lr-7-4-1  - 3 cells all awesome
+.lr-8-1-3  - 3 cells all awesome
+.lr-8-2-3 - 3 cells all awesome
+.lr-8-3-1  - 3 cells all awesome
+.lr-9-2-1 - 3 cells all awesome
+.lr-10-1-1 - 3 cells all awesome
+
+Markup:
+<div class="gridtest {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+<div class="gridtest gridtest--small {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+<div class="gridtest gridtest--medium {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+
+Styleguide 21.2
+*/

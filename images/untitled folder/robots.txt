@@ -1,0 +1,707 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="da" lang="da" dir="ltr">
+<!--
+  http://drupal.org/projects/moshpit
+	Geek Röyale http://geekroyale.com
+	Sex Drupal & Rock n Roll
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Page not found | morten.dk</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="/sites/morten.dk/themes/mdkate/favicon.ico" type="image/x-icon" />
+  <link type="text/css" rel="stylesheet" media="all" href="/sites/all/modules/contrib/codefilter/codefilter.css?Z" />
+<!--[if gte IE 8]><!-->
+<link type="text/css" rel="stylesheet" media="all" href="http://morten.dk/sites/morten.dk/files/css/css_3539c49557c5bf306cb1d36c0823e1fb.css" />
+<link type="text/css" rel="stylesheet" media="all" href="http://morten.dk/sites/morten.dk/files/css/css_3539c49557c5bf306cb1d36c0823e1fb.emimage.css" />
+<!--<![endif]-->
+<!--[if lt IE 8]>
+<link type="text/css" rel="stylesheet" media="all" href="http://morten.dk/sites/morten.dk/files/css/css_3539c49557c5bf306cb1d36c0823e1fb.mhtml.css" />
+<![endif]-->
+	<script type="text/javascript" src="http://morten.dk/sites/morten.dk/files/js/js_ce7610df9fc8455ad27c9a30f5d6613f.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","googleanalytics":{"trackOutgoing":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"lightbox2":{"rtl":"0","file_path":"\/(\\w\\w\/)sites\/morten.dk\/files","default_image":"\/sites\/all\/modules\/contrib\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":true,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":false,"disable_resize":false,"disable_zoom":false,"force_show_nav":false,"show_caption":true,"loop_items":false,"node_link_text":"View Image Details","node_link_target":false,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003ca href=\"#\" onclick=\"hideLightbox(); return FALSE;\"\u003e\u003ckbd\u003ex\u003c\/kbd\u003e\u003c\/a\u003e to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":1,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":false},"nice_menus_options":{"delay":"800","speed":"1"},"views":{"ajax_path":"\/views\/ajax","ajaxViews":[{"view_name":"comments_recent","view_display_id":"block","view_args":"","view_path":"blocks404","view_base_path":"comments\/recent","view_dom_id":3,"pager_element":0}]}});
+//--><!]]>
+</script>
+
+	<script type="text/javascript" src="http://use.typekit.com/byx0hgt.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+</head>
+<body class="not-front not-logged-in page-blocks404 two-sidebars">
+<div id="container" class="clearfix">
+  <div id="container-inner">
+
+    <div id="page">
+      <div id="page-inner" class="clearfix">
+
+        <div id="pagebody" class="grid-full clearfix">
+          <div id="pagebody-inner">
+
+          	<div id="content" class="grid16-10">
+              <div id="content-inner">
+								
+								<div id="header" class="grid16-10 alpha omega">
+
+			            <div id="site-name" class="grid16-1">
+			              <a href="/" title="Home" rel="home">
+			                morten.dk			              </a>
+			            </div>
+
+			          				          	  <ul class="nice-menu nice-menu-down" id="nice-menu-1"><li class="menu-1874 menu-path-front first  odd "><a href="/" class="bl-g"><span class="icon-bl-g ">blög</span></a></li>
+<li class="menu-112 menu-path-node-199 even "><a href="/eg%C3%B6" class="eg-"><span class="icon-eg- ">egö</span></a></li>
+<li class="menu-86 menu-path-work odd "><a href="/work" class="w-rk"><span class="icon-w-rk ">wörk</span></a></li>
+<li class="menu-66 menu-path-node-153 even  last "><a href="/form/contact" class="c-ntact"><span class="icon-c-ntact ">cöntact</span></a></li>
+</ul>
+			          										
+								</div>
+
+            		
+                
+
+				        				      		<div id="path">
+				            <div id="path-inner">
+				              <div class="breadcrumb"><a href="/">Home</a></div> 
+				            </div>
+				          </div>
+				        
+
+                
+                                
+                The requested page could not be found.
+                             
+
+
+              </div>
+          	</div>
+
+						<div id="content-right" class="clearfix">
+
+							<div id="sitebar-top" class="grid16-6">
+								<!-- block.tpl-->
+<div id="block-views-tweets-block2" class="block block-views ">
+  
+  
+
+
+<!--views-view.tpl.php-->
+<div class=" "> 
+
+  <div class="view-content">
+    <!-- views-view-unformatted.tpl.php -->
+  <div class="first last"><!-- views-view-fields.tpl.php -->
+      <div class="profile-image-url">
+	<img src="http://a0.twimg.com/profile_images/1294797047/_mdkbarcelona200_normal.jpg" alt="" title=""  />
+      </div>
+      <span class="text">
+	i went from journey to damn yankees 
+Think i need a beer pretty soon
+      </span>
+
+       &#8212; 
+      <span class="created-time">
+	<em>37 weeks 5 days</em> ago
+      </span>
+      <div class="screen-name">
+	<a href="http://twitter.com/mortendk">mortendk</a>
+      </div>
+      <div class="followers-count">
+	4,356
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </div>
+<!-- / views-view-unformatted.tpl.php -->
+  </div>  
+</div>
+
+<!-- / views-view.tpl.php--></div>							</div>
+
+	            	              <div id="sitebar-left" class="grid16-3">
+	                
+<div id="block-block-9" class="block block-block clearfix">
+      <h3><span class="icon">good Stüff</span></h3>
+    <p><strong><a href="http://drupal.org/project/mothership" target="_blank">Mothership</a> - a clean up the crap "theme"</strong></p>
+<p><a href="http://morten.dk/blog/open-atrium-theme-miro" target="_self"><strong>Miro</strong></a> - a open atrium theme:<br /><a href="http://morten.dk/sites/morten.dk/files/miro-theme-0-3.zip"></a>more info &amp; comments </p>  </div>
+<div id="block-block-12" class="block block-block clearfix">
+      <h3><span class="icon">freya rocks</span></h3>
+    <p>the progress for my premature daughter can be folllowed here:<br />
+<a href="http://freyarocks.wordpress.com/">Freya Rocks</a><br />
+sorry its in danish</p>
+  </div>
+<div id="block-views-blog-block-1" class="block block-views clearfix">
+      <h3><span class="icon">the blög</span></h3>
+    
+
+
+<!--views-view.tpl.php-->
+<div class=" "> 
+
+  <div class="view-content">
+    <!-- views-view-list.tpl.php -->
+
+  <ul>
+    <li class="first"><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/dear-drupal-association" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/drupalAlove.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/dear-drupal-association">Dear Drupal Association</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>30.09.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	
+      </div>
+      <div class="title">
+	<a href="/blog/drupalpicchu-2014">DrupalPicchu 2014</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>27.09.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/what-drupal-association-needs" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/ideasforabetterda.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/what-drupal-association-needs">This is what the Drupal Association needs</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>24.09.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/tonight-meet-candidates" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/standupandbecounted_0.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/tonight-meet-candidates">Tonight on Meet the candidates!</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>19.09.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/drupal-association-election-2012" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/standupandbecounted.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/drupal-association-election-2012">What are we voting for - all the things!</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>18.09.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/second-rate-citizens-drupalcon" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/discount.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/second-rate-citizens-drupalcon">the second rate citizens of drupalcon</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>14.05.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/drupalcamp-g%C3%B6thenburg-2012" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/goteborg.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/drupalcamp-g%C3%B6thenburg-2012">DrupalCamp Göthenburg 2012</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>12.05.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/kiss-my-sass-community-day-2012" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/communityday2012.png" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/kiss-my-sass-community-day-2012">Kiss My Sass - Community Day 2012</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>10.05.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/frontend-united-we-came-rock" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/fun.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/frontend-united-we-came-rock">Frontend United We came to Rock!</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>24.04.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/html4-s-slides-drupalcon" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/drupalcondenverhtml4s_0.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/html4-s-slides-drupalcon">HTML4 S - slides from drupalcon</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>21.03.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/frontend-united-2012" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/fu2012.png" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/frontend-united-2012">Frontend United 2012</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>11.01.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/time-ie7-tax" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/ie7die.png" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/time-ie7-tax">Time for the IE7 tax :)</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>04.01.12</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/heya-display-suite" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/drupalsthlm_0.png" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/heya-display-suite">Heya Display Suite</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>14.11.11</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/dogme111111" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/dogme111111.png" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/dogme111111">Dogme11.11.11  -a  Vow of frontend Chastity</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>11.11.11</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+  <li class=" last"><!-- views-view-fields.tpl.php -->
+      <div class="field-image-default-fid">
+	<a href="/blog/drupalcon-voting-waste-time-resources" class="imagecache imagecache-20_20_crop imagecache-linked imagecache-20_20_crop_linked"><img src="http://morten.dk/sites/morten.dk/files/imagecache/20_20_crop/images_node/voting.jpg" alt="" title=""  class="imagecache imagecache-20_20_crop" width="20" height="20" /></a>
+      </div>
+      <div class="title">
+	<a href="/blog/drupalcon-voting-waste-time-resources">Drupalcon Voting is a waste of time &amp; resources</a>
+      </div>
+      <div class="created">
+        <label>Post date</label>
+        <span>07.11.11</span>
+      </div>
+<!--/ views-view-fields.tpl.php -->
+  </li>
+</ul>
+<!-- /views-view-list.tpl.php -->  </div>  
+</div>
+
+<!-- / views-view.tpl.php-->  </div>
+<div id="block-menu-menu-term" class="block block-menu clearfix">
+      <h3><span class="icon">catagories</span></h3>
+    <!--menu-->
+  <ul class="menu">
+    <li class="leaf"><a href="/tags/drupal" class="drupal"><span class="icon-drupal ">drupal</span></a></li>
+    <li class="leaf"><a href="/tags/theming" class="theming"><span class="icon-theming ">theming</span></a></li>
+    <li class="leaf"><a href="/taxonomy/term/99" class="geek-royale"><span class="icon-geek-royale ">geek royale</span></a></li>
+    <li class="leaf"><a href="/tags/css" class="css"><span class="icon-css ">css</span></a></li>
+    <li class="leaf"><a href="/tags/design" class="design"><span class="icon-design ">design</span></a></li>
+    <li class="leaf"><a href="/taxonomy/term/103" class="sessions"><span class="icon-sessions ">sessions</span></a></li>
+    <li class="leaf"><a href="/taxonomy/term/98" class="swag"><span class="icon-swag ">swag</span></a></li>
+    <li class="leaf"><a href="/taxonomy/term/132" class="toolbox"><span class="icon-toolbox ">toolbox</span></a></li>
+  </ul>
+  <!--/menu-->
+  </div>	              </div>
+	            
+	            	              <div id="sitebar-right" class="grid16-3">
+	                
+<div id="block-block-15" class="block block-block clearfix">
+    <p>Give some Love to the development of the mothership<br />
+<a href="http://flattr.com/thing/123750/mothership" target="_blank"><br />
+<img src="http://api.flattr.com/button/flattr-badge-large.png" alt="Flattr this" title="Flattr this" border="0" /></a></p>
+  </div>
+<div id="block-user" class="block block-user clearfix">
+      <h3><span class="icon">User login</span></h3>
+    <form action="/"  accept-charset="UTF-8" method="post" id="user-login-form">
+<div><div class="form-item form-item-textfield "  id="edit-name-wrapper">
+ <label for="edit-name">Username or e-mail: <span class="form-required" title="This field is required.">*</span></label>
+<input type="text" maxlength="60" name="name" id="edit-name" size="15" value="" class="form-text required" />
+</div>
+<div class="form-item form-item-password "  id="edit-pass-wrapper">
+ <label for="edit-pass">Password: <span class="form-required" title="This field is required.">*</span></label>
+<input type="password" name="pass" id="edit-pass"  maxlength="60"  size="15"  class="form-text required" />
+</div>
+<div class="form-button edit-submit"><span><input type="submit" name="op" id="edit-submit" value="Log in"  class="form-submit" /></span></div>
+<ul class=" item-list"><li class="even first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="odd last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul><input type="hidden" name="form_build_id" id="form-d4269821a748cd98b26fdd36c8a60c82" value="form-d4269821a748cd98b26fdd36c8a60c82"  />
+<input type="hidden" name="form_id" id="edit-user-login-block" value="user_login_block"  />
+
+</div></form>
+  </div>
+<div id="block-views-comments-recent-block" class="block block-views clearfix">
+      <h3><span class="icon">Recent comments</span></h3>
+    
+
+
+<!--views-view.tpl.php-->
+<div class=" "> 
+
+  <div class="view-content">
+    <!-- views-view-list.tpl.php -->
+
+  <ul>
+    <li class="first">
+      <h5>
+  
+    
+      <a href="/blog/drupalcamp-g%C3%B6thenburg-2012#comment-5549">Gold itself</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      jennywqy
+      </span>
+  
+
+      <span class="date">
+  
+    
+      02.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/design-camp-berlin#comment-5548">hd wallpapers</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      hd wallpapers
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/design-camp-berlin#comment-5547">hd wallpapers</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      hd wallpapers
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/what-drupal-association-needs#comment-5546">SS</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      AnonymousASDSD
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/what-drupal-association-needs#comment-5545">Many articles about</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      Anonymous
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/dear-drupal-association#comment-5544">Info</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      Orga
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/second-rate-citizens-drupalcon#comment-5543">Comment</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      Darwin John
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/drupalpicchu-2014#comment-5542">Awsome Post</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      akhsa
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li>
+      <h5>
+  
+    
+      <a href="/blog/drupalcon-voting-waste-time-resources#comment-5541">icemaker</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      icemaker
+      </span>
+  
+
+      <span class="date">
+  
+    
+      01.07.13
+      </span>
+  
+  </li>
+  <li class=" last">
+      <h5>
+  
+    
+      <a href="/blog/drupalcon-voting-waste-time-resources#comment-5540">These kind of post are always</a>
+      </h5>
+  
+
+      <span class="author">
+  
+    
+      Anonymous
+      </span>
+  
+
+      <span class="date">
+  
+    
+      30.06.13
+      </span>
+  
+  </li>
+</ul>
+<!-- /views-view-list.tpl.php -->  </div>  
+</div>
+
+<!-- / views-view.tpl.php-->  </div>
+<div id="block-block-5" class="block block-block clearfix">
+      <h3><span class="icon">give some luv</span></h3>
+    <p>drupal member ...</p>
+<p>geek royale</p>
+  </div>	              </div>
+	            
+							
+						</div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  
+		<div id="footer" class="clearfix">
+			<div id="footer-inner">
+				
+				<div id="footer-one" class="grid16-4">
+	         <!-- block.tpl-->
+<div id="block-user-3" class="block block-user ">
+      <h3>Who's online</h3>
+  
+  There are currently <em>0 users</em> and <em>0 guests</em> online.</div>				</div>
+
+				<div id="footer-two" class="grid16-4">
+					<!-- block.tpl-->
+<div id="block-block-7" class="block block-block ">
+  
+  <p><a href="http://www.flickr.com/photos/mortendk/">Flick</a><br />
+Skype: skype.morten.dk<br />
+<a href="http://www.last.fm/user/mortendk/">last.fm</a><br />
+<a href="http://www.facebook.com/mortendk">Facebook</a><br />
+<a href="http://del.icio.us/mortendk">del.icio.us</a><br />
+<a href="http://www.linkedin.com/in/mortendk">LinkedIn</a><br />
+<a href="http://twitter.com/mortendk">Twitter</a></p>
+</div>				</div>
+
+				<div id="footer-three" class="grid16-4">
+					<!-- block.tpl-->
+<div id="block-aggregator-feed-2" class="block block-aggregator ">
+      <h3>twitpic</h3>
+  
+  <ul class=" item-list"><li class="even first last"><a href="http://twitpic.com/cqkjke">mortendk: http://twitpic.com/cqkjke “Fuck it - Mothership it” sticker in the making…</a>
+</li>
+</ul><div class="more-link"><a href="/aggregator/sources/2" title="View this feed&#039;s recent news.">more</a></div></div>				</div>
+
+				<div id="footer-four" class="grid16-4">
+				<!-- block.tpl-->
+<div id="block-node" class="block block-node ">
+      <h3>Syndicate</h3>
+  
+  <a href="/rss.xml" class="feed-icon"><img src="/misc/feed.png" alt="Syndicate content" title="Syndicate" width="16" height="16" /></a></div>				</div>
+
+			</div>
+		</div>
+
+  </div>
+</div>
+
+
+
+    <!--[if IE 6]>
+      <script type="text/javascript">
+        var IE6UPDATE_OPTIONS = {
+          icons_path: "http://morten.dk/sites/all/modules/contrib/ie6update/images/",
+          message: "Internet Explorer is missing updates required to view this site. Click here to update... ",
+          url: "http://www.microsoft.com/windows/internet-explorer/default.aspx"
+        }
+      </script>
+      <script type="text/javascript" src="http://morten.dk/sites/all/modules/contrib/ie6update/ie6update.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="http://morten.dk/sites/morten.dk/files/js/js_c80d1c11e57f759018e9636323155518.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{var pageTracker = _gat._getTracker("UA-301193-1");pageTracker._trackPageview("/404.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);} catch(err) {}
+//--><!]]>
+</script>
+</body>
+</html>

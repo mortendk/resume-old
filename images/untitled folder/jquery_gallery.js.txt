@@ -1,0 +1,11 @@
+/*simple img gallery jQuery style*/
+$(function(){
+ 	$('div#gallery_thumpnail a').click(function() { // all links in div#gallery_thympnail click
+		$('#gallery_image').hide().attr('src', this.getAttribute ('href'));//hide the placeholder for images, change its src attribute to load new image 
+    	$('#gallery_image').attr('height', this.getAttribute ('href')) //new height
+    	$('#gallery_image').attr('width', this.getAttribute ('href'))	//new width
+	//	$('#description').html(this.getAttribute("title")||""); //replace the contents of #descripton 
+    	return false; // prevent following links 
+  });
+  $('#gallery_image').load(function(){$(this).fadeIn('slow');}); // when new image loads fade it in
+});

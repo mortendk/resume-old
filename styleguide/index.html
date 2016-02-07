@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Yggdrasil Styleguide</title>
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node" />
+  <meta name="viewport" content="width=device-width">
+  <!-- <link rel="stylesheet" href="public/kss.css"> -->
+  <link rel="stylesheet" href="public/font-awesome.css">
+  <link rel="stylesheet" href="public/styleguide.css">
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body class="styleguide-global">
+  <!-- navigation   -->
+  <header role="bannerinfo" class="layout-sg-header">
+    <nav class="styleguide__menu">
+    <a href="index.html">Styleguide</a>
+    
+      <a href="section-1.html">Base</a>
+    
+      <a href="section-2.html">Typography</a>
+    
+      <a href="section-3.html">Color scheme</a>
+    
+      <a href="section-20.html">Form</a>
+    
+      <a href="section-21.html">mjølner - mjolnir layout system</a>
+    
+      <a href="section-30.html">Mixins</a>
+    
+    </nav>
+  </header>
+
+  <!-- /navigation -->
+
+  <main role="main" class="layout-sg-main">
+
+    <aside class="layout-sg-sidebar">
+      <!-- nav sub -->
+      <nav class="styleguide__submenu">
+        
+        
+      </nav>
+      <!-- nav sub -->
+    </aside>
+
+    <div class="layout-sg-content">
+
+      
+        <article class="styleguide__overview" id="section-0">
+        <p><h1>Yggdrasil Styleguide</h1>
+<h2>1 Base setup</h2>
+<ul>
+<li>color set</li>
+<li>Typography</li>
+<li>text colors</li>
+<li>Images</li>
+<li>Video</li>
+<li>Code</li>
+<li>dividers (hr)</li>
+<li>Tables</li>
+<li>Forms</li>
+<li>Buttons</li>
+</ul>
+<h2>2 Layout / Grid system</h2>
+<ul>
+<li>LF 2 - 6</li>
+<li>half / sixth</li>
+<li>helpers</li>
+<li>hide / show</li>
+<li>grid examples</li>
+<li>inline grid classes</li>
+</ul>
+<h2>3 Navigation componenets</h2>
+<ul>
+<li>navigation base</li>
+<li>drop down menu</li>
+<li>sidebar menu</li>
+<li>tap menu</li>
+<li>mobile slid ind</li>
+<li>mobile dropdown</li>
+<li>pager</li>
+<li>breadcrumb</li>
+<li>horizontal menu</li>
+<li>contextual links component</li>
+<li>top navigation</li>
+</ul>
+<h2>4 Drupal Components</h2>
+<ul>
+<li>Login</li>
+<li>search</li>
+<li>messages (alterts )</li>
+<li><p>admin bar</p>
+</li>
+<li><p>comments</p>
+</li>
+<li>node list (articles)</li>
+<li>views selectors</li>
+</ul>
+<h2>5 Design</h2>
+<ul>
+<li>graphic styles</li>
+<li>Icons</li>
+<li>header</li>
+<li>footer*</li>
+</ul>
+<pre><code>git clone git://github.com/mortendk/yggdrasil.git</code></pre>
+</p>
+        </article>
+      
+    </div>
+
+  </main>
+
+  <footer class="layout-sg-footer">
+    <div class="layout-sg-footer__content">
+      Created using <a href="https://github.com/hughsk/kss-node">kss-node</a> and
+    </div>
+
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="public/jquery.min.js"></script>
+  <script src="public/kss.js"></script>
+  <!-- code colorscheme -->
+  <link rel="stylesheet" href="public/highlight/styles/monokai_sublime.css">
+  <script src="public/highlight/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+
+
+      //-------------------------
+      //scroll to same # on a page
+      //--------------------------
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+
+
+
+  </script>
+</body>
+</html>

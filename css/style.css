@@ -1,0 +1,5927 @@
+@charset "UTF-8";
+/*
+Style.css
+file to gather & collect all of the files
+*/
+/*
+grid setup
+--------------------------------------------------------------------------------
+[Singularity GS](http://singularity.gs) 1.2
+[wiki](https://github.com/Team-Sass/Singularity/wiki)
+//toggle g key for grid testing
+*/
+/*
+breakpoints
+--------------------------------------------------------------------------------
+Sets the default breakpoints for us in the build of the layout file.
+Documentation
+http://breakpoint-sass.com
+https://github.com/team-sass/breakpoint
+*/
+/*
+colors
+--------------------------------------------------------------------------------
+*/
+/*
+compass defaults
+--------------------------------------------------------------------------------
+*/
+/*
+Mixins
+
+Description.
+
+Markup:
+
+Styleguide 30.0
+*/
+/*
+mixin: linkcolor
+
+a mixin for easy link coloring
+
+$link - main links color
+$hover - hover color
+$decorationhover - hover decoration default underline
+$visited: - visited color
+$focus  - hover color default same as link
+$decoration - textdecoration
+
+Styleguide 5.1
+*/
+/*
+REM fix
+--------------
+
+A fix so we can use rem & support ie8 & its retarded friends
+$size is the em value
+@include remfix('width', 1.5);
+
+*/
+/*
+fontsize
+-----------------------
+@mixin fontsize($size:1.6, $line: $size * 1.5){
+  font-size:   ($size * 10) + px;
+  font-size:   $size + rem;
+  line-height: ($line * 10) + px;
+  line-height: $line + rem;
+}
+
+ */
+/*
+Arrow
+------------------------------------
+adds an arrow to a field
+ */
+/*
+Circle
+-------------------------------------------
+makes stuff round ...
+ */
+/*
+tooltip
+
+Display little tooltips
+
+Markup:
+<a href="http://twitter.com/mortendk" class="tooltip">
+  <i class="fa fa-twitter"></i><span class="tooltip__msg">cheezburger!</span>
+</a>
+
+Styleguide 20.0
+*/
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 4, ../sass/lib/font-awesome/_core.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+/* line 5, ../sass/lib/font-awesome/_larger.scss */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+/* line 10, ../sass/lib/font-awesome/_larger.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 11, ../sass/lib/font-awesome/_larger.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 12, ../sass/lib/font-awesome/_larger.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 13, ../sass/lib/font-awesome/_larger.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 3, ../sass/lib/font-awesome/_fixed-width.scss */
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+/* line 4, ../sass/lib/font-awesome/_list.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+/* line 8, ../sass/lib/font-awesome/_list.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 10, ../sass/lib/font-awesome/_list.scss */
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+/* line 16, ../sass/lib/font-awesome/_list.scss */
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+/* line 4, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+
+/* line 10, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 11, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 14, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+/* line 15, ../sass/lib/font-awesome/_bordered-pulled.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, ../sass/lib/font-awesome/_spinning.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 12, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 13, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  /* line 16, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 17, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  /* line 20, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 21, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  /* line 24, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 25, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  /* line 28, ../sass/lib/font-awesome/_spinning.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 29, ../sass/lib/font-awesome/_spinning.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+/* line 4, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 5, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 6, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 8, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 9, ../sass/lib/font-awesome/_rotated-flipped.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 4, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 12, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 18, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 19, ../sass/lib/font-awesome/_stacked.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 20, ../sass/lib/font-awesome/_stacked.scss */
+.fa-inverse {
+  color: white;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+/* line 4, ../sass/lib/font-awesome/_icons.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 5, ../sass/lib/font-awesome/_icons.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 6, ../sass/lib/font-awesome/_icons.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 7, ../sass/lib/font-awesome/_icons.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 8, ../sass/lib/font-awesome/_icons.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 9, ../sass/lib/font-awesome/_icons.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 10, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 11, ../sass/lib/font-awesome/_icons.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 12, ../sass/lib/font-awesome/_icons.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 13, ../sass/lib/font-awesome/_icons.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 14, ../sass/lib/font-awesome/_icons.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 15, ../sass/lib/font-awesome/_icons.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 16, ../sass/lib/font-awesome/_icons.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 17, ../sass/lib/font-awesome/_icons.scss */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 18, ../sass/lib/font-awesome/_icons.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 19, ../sass/lib/font-awesome/_icons.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 20, ../sass/lib/font-awesome/_icons.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 21, ../sass/lib/font-awesome/_icons.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 22, ../sass/lib/font-awesome/_icons.scss */
+.fa-gear:before,
+.fa-cog:before {
+  content: "\f013";
+}
+
+/* line 24, ../sass/lib/font-awesome/_icons.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 25, ../sass/lib/font-awesome/_icons.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 26, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 27, ../sass/lib/font-awesome/_icons.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 28, ../sass/lib/font-awesome/_icons.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 29, ../sass/lib/font-awesome/_icons.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 30, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 31, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 32, ../sass/lib/font-awesome/_icons.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 33, ../sass/lib/font-awesome/_icons.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 34, ../sass/lib/font-awesome/_icons.scss */
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 36, ../sass/lib/font-awesome/_icons.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 37, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 38, ../sass/lib/font-awesome/_icons.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 39, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 40, ../sass/lib/font-awesome/_icons.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 41, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 42, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 43, ../sass/lib/font-awesome/_icons.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 44, ../sass/lib/font-awesome/_icons.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 45, ../sass/lib/font-awesome/_icons.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 46, ../sass/lib/font-awesome/_icons.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 47, ../sass/lib/font-awesome/_icons.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 48, ../sass/lib/font-awesome/_icons.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 49, ../sass/lib/font-awesome/_icons.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 50, ../sass/lib/font-awesome/_icons.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 51, ../sass/lib/font-awesome/_icons.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 52, ../sass/lib/font-awesome/_icons.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 53, ../sass/lib/font-awesome/_icons.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 54, ../sass/lib/font-awesome/_icons.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 55, ../sass/lib/font-awesome/_icons.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 56, ../sass/lib/font-awesome/_icons.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 57, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 58, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 59, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 60, ../sass/lib/font-awesome/_icons.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 61, ../sass/lib/font-awesome/_icons.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 62, ../sass/lib/font-awesome/_icons.scss */
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 64, ../sass/lib/font-awesome/_icons.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 65, ../sass/lib/font-awesome/_icons.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 66, ../sass/lib/font-awesome/_icons.scss */
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 67, ../sass/lib/font-awesome/_icons.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 68, ../sass/lib/font-awesome/_icons.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 69, ../sass/lib/font-awesome/_icons.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 70, ../sass/lib/font-awesome/_icons.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 71, ../sass/lib/font-awesome/_icons.scss */
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 73, ../sass/lib/font-awesome/_icons.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 74, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 75, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 76, ../sass/lib/font-awesome/_icons.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 77, ../sass/lib/font-awesome/_icons.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 78, ../sass/lib/font-awesome/_icons.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 79, ../sass/lib/font-awesome/_icons.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 80, ../sass/lib/font-awesome/_icons.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 81, ../sass/lib/font-awesome/_icons.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 82, ../sass/lib/font-awesome/_icons.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 83, ../sass/lib/font-awesome/_icons.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 84, ../sass/lib/font-awesome/_icons.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 85, ../sass/lib/font-awesome/_icons.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 86, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 87, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 88, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 89, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 90, ../sass/lib/font-awesome/_icons.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 91, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 92, ../sass/lib/font-awesome/_icons.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 93, ../sass/lib/font-awesome/_icons.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 94, ../sass/lib/font-awesome/_icons.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 95, ../sass/lib/font-awesome/_icons.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 96, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 97, ../sass/lib/font-awesome/_icons.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 98, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 99, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 100, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 101, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 102, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "\f064";
+}
+
+/* line 104, ../sass/lib/font-awesome/_icons.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 105, ../sass/lib/font-awesome/_icons.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 106, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 107, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 108, ../sass/lib/font-awesome/_icons.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 109, ../sass/lib/font-awesome/_icons.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 110, ../sass/lib/font-awesome/_icons.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 111, ../sass/lib/font-awesome/_icons.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 112, ../sass/lib/font-awesome/_icons.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 113, ../sass/lib/font-awesome/_icons.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 114, ../sass/lib/font-awesome/_icons.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 115, ../sass/lib/font-awesome/_icons.scss */
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 117, ../sass/lib/font-awesome/_icons.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 118, ../sass/lib/font-awesome/_icons.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 119, ../sass/lib/font-awesome/_icons.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 120, ../sass/lib/font-awesome/_icons.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 121, ../sass/lib/font-awesome/_icons.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 122, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 123, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 124, ../sass/lib/font-awesome/_icons.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 125, ../sass/lib/font-awesome/_icons.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 126, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 127, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 128, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 129, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 130, ../sass/lib/font-awesome/_icons.scss */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 131, ../sass/lib/font-awesome/_icons.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 132, ../sass/lib/font-awesome/_icons.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 133, ../sass/lib/font-awesome/_icons.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 134, ../sass/lib/font-awesome/_icons.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 135, ../sass/lib/font-awesome/_icons.scss */
+.fa-gears:before,
+.fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 137, ../sass/lib/font-awesome/_icons.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 138, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 139, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 140, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 141, ../sass/lib/font-awesome/_icons.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 142, ../sass/lib/font-awesome/_icons.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 143, ../sass/lib/font-awesome/_icons.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 144, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 145, ../sass/lib/font-awesome/_icons.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 146, ../sass/lib/font-awesome/_icons.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 147, ../sass/lib/font-awesome/_icons.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 148, ../sass/lib/font-awesome/_icons.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 149, ../sass/lib/font-awesome/_icons.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 150, ../sass/lib/font-awesome/_icons.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 151, ../sass/lib/font-awesome/_icons.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 152, ../sass/lib/font-awesome/_icons.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 153, ../sass/lib/font-awesome/_icons.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 154, ../sass/lib/font-awesome/_icons.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 155, ../sass/lib/font-awesome/_icons.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 156, ../sass/lib/font-awesome/_icons.scss */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 157, ../sass/lib/font-awesome/_icons.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 158, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 159, ../sass/lib/font-awesome/_icons.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 160, ../sass/lib/font-awesome/_icons.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 161, ../sass/lib/font-awesome/_icons.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 162, ../sass/lib/font-awesome/_icons.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 163, ../sass/lib/font-awesome/_icons.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 164, ../sass/lib/font-awesome/_icons.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 165, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 166, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 167, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 168, ../sass/lib/font-awesome/_icons.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 169, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 170, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 171, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 172, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 173, ../sass/lib/font-awesome/_icons.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 174, ../sass/lib/font-awesome/_icons.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 175, ../sass/lib/font-awesome/_icons.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 176, ../sass/lib/font-awesome/_icons.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 177, ../sass/lib/font-awesome/_icons.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 178, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 179, ../sass/lib/font-awesome/_icons.scss */
+.fa-group:before,
+.fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 181, ../sass/lib/font-awesome/_icons.scss */
+.fa-chain:before,
+.fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 183, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 184, ../sass/lib/font-awesome/_icons.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 185, ../sass/lib/font-awesome/_icons.scss */
+.fa-cut:before,
+.fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 187, ../sass/lib/font-awesome/_icons.scss */
+.fa-copy:before,
+.fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 189, ../sass/lib/font-awesome/_icons.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 190, ../sass/lib/font-awesome/_icons.scss */
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 192, ../sass/lib/font-awesome/_icons.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 193, ../sass/lib/font-awesome/_icons.scss */
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 194, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 195, ../sass/lib/font-awesome/_icons.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 196, ../sass/lib/font-awesome/_icons.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 197, ../sass/lib/font-awesome/_icons.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 198, ../sass/lib/font-awesome/_icons.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 199, ../sass/lib/font-awesome/_icons.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 200, ../sass/lib/font-awesome/_icons.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 201, ../sass/lib/font-awesome/_icons.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 202, ../sass/lib/font-awesome/_icons.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 203, ../sass/lib/font-awesome/_icons.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 204, ../sass/lib/font-awesome/_icons.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 205, ../sass/lib/font-awesome/_icons.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 206, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 207, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 208, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 209, ../sass/lib/font-awesome/_icons.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 210, ../sass/lib/font-awesome/_icons.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 211, ../sass/lib/font-awesome/_icons.scss */
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 213, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-down:before,
+.fa-sort-asc:before {
+  content: "\f0dd";
+}
+
+/* line 215, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-up:before,
+.fa-sort-desc:before {
+  content: "\f0de";
+}
+
+/* line 217, ../sass/lib/font-awesome/_icons.scss */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 218, ../sass/lib/font-awesome/_icons.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 219, ../sass/lib/font-awesome/_icons.scss */
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 221, ../sass/lib/font-awesome/_icons.scss */
+.fa-legal:before,
+.fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 223, ../sass/lib/font-awesome/_icons.scss */
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 225, ../sass/lib/font-awesome/_icons.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 226, ../sass/lib/font-awesome/_icons.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 227, ../sass/lib/font-awesome/_icons.scss */
+.fa-flash:before,
+.fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 229, ../sass/lib/font-awesome/_icons.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 230, ../sass/lib/font-awesome/_icons.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 231, ../sass/lib/font-awesome/_icons.scss */
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 233, ../sass/lib/font-awesome/_icons.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 234, ../sass/lib/font-awesome/_icons.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 235, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 236, ../sass/lib/font-awesome/_icons.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 237, ../sass/lib/font-awesome/_icons.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 238, ../sass/lib/font-awesome/_icons.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 239, ../sass/lib/font-awesome/_icons.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 240, ../sass/lib/font-awesome/_icons.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 241, ../sass/lib/font-awesome/_icons.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 242, ../sass/lib/font-awesome/_icons.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 243, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 244, ../sass/lib/font-awesome/_icons.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 245, ../sass/lib/font-awesome/_icons.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 246, ../sass/lib/font-awesome/_icons.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 247, ../sass/lib/font-awesome/_icons.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 248, ../sass/lib/font-awesome/_icons.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 249, ../sass/lib/font-awesome/_icons.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 250, ../sass/lib/font-awesome/_icons.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 251, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 252, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 253, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 254, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 255, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 256, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 257, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 258, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 259, ../sass/lib/font-awesome/_icons.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 260, ../sass/lib/font-awesome/_icons.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 261, ../sass/lib/font-awesome/_icons.scss */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 262, ../sass/lib/font-awesome/_icons.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 263, ../sass/lib/font-awesome/_icons.scss */
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 265, ../sass/lib/font-awesome/_icons.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 266, ../sass/lib/font-awesome/_icons.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 267, ../sass/lib/font-awesome/_icons.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 268, ../sass/lib/font-awesome/_icons.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 269, ../sass/lib/font-awesome/_icons.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 270, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "\f112";
+}
+
+/* line 272, ../sass/lib/font-awesome/_icons.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 273, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 274, ../sass/lib/font-awesome/_icons.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 275, ../sass/lib/font-awesome/_icons.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 276, ../sass/lib/font-awesome/_icons.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 277, ../sass/lib/font-awesome/_icons.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 278, ../sass/lib/font-awesome/_icons.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 279, ../sass/lib/font-awesome/_icons.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 280, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 281, ../sass/lib/font-awesome/_icons.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 282, ../sass/lib/font-awesome/_icons.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 283, ../sass/lib/font-awesome/_icons.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 284, ../sass/lib/font-awesome/_icons.scss */
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 285, ../sass/lib/font-awesome/_icons.scss */
+.fa-mail-reply-all:before {
+  content: "\f122";
+}
+
+/* line 286, ../sass/lib/font-awesome/_icons.scss */
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 289, ../sass/lib/font-awesome/_icons.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 290, ../sass/lib/font-awesome/_icons.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 291, ../sass/lib/font-awesome/_icons.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 292, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 294, ../sass/lib/font-awesome/_icons.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 295, ../sass/lib/font-awesome/_icons.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 296, ../sass/lib/font-awesome/_icons.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 297, ../sass/lib/font-awesome/_icons.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 298, ../sass/lib/font-awesome/_icons.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 299, ../sass/lib/font-awesome/_icons.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 300, ../sass/lib/font-awesome/_icons.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 301, ../sass/lib/font-awesome/_icons.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 302, ../sass/lib/font-awesome/_icons.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 303, ../sass/lib/font-awesome/_icons.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 304, ../sass/lib/font-awesome/_icons.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 305, ../sass/lib/font-awesome/_icons.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 306, ../sass/lib/font-awesome/_icons.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 307, ../sass/lib/font-awesome/_icons.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 308, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 309, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 310, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 311, ../sass/lib/font-awesome/_icons.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 312, ../sass/lib/font-awesome/_icons.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 313, ../sass/lib/font-awesome/_icons.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 314, ../sass/lib/font-awesome/_icons.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 315, ../sass/lib/font-awesome/_icons.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 316, ../sass/lib/font-awesome/_icons.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 317, ../sass/lib/font-awesome/_icons.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 318, ../sass/lib/font-awesome/_icons.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 319, ../sass/lib/font-awesome/_icons.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 320, ../sass/lib/font-awesome/_icons.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 321, ../sass/lib/font-awesome/_icons.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 322, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 323, ../sass/lib/font-awesome/_icons.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 324, ../sass/lib/font-awesome/_icons.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 325, ../sass/lib/font-awesome/_icons.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 326, ../sass/lib/font-awesome/_icons.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 327, ../sass/lib/font-awesome/_icons.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 328, ../sass/lib/font-awesome/_icons.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 329, ../sass/lib/font-awesome/_icons.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 330, ../sass/lib/font-awesome/_icons.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 331, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 333, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 335, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 337, ../sass/lib/font-awesome/_icons.scss */
+.fa-euro:before,
+.fa-eur:before {
+  content: "\f153";
+}
+
+/* line 339, ../sass/lib/font-awesome/_icons.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 340, ../sass/lib/font-awesome/_icons.scss */
+.fa-dollar:before,
+.fa-usd:before {
+  content: "\f155";
+}
+
+/* line 342, ../sass/lib/font-awesome/_icons.scss */
+.fa-rupee:before,
+.fa-inr:before {
+  content: "\f156";
+}
+
+/* line 344, ../sass/lib/font-awesome/_icons.scss */
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 348, ../sass/lib/font-awesome/_icons.scss */
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "\f158";
+}
+
+/* line 351, ../sass/lib/font-awesome/_icons.scss */
+.fa-won:before,
+.fa-krw:before {
+  content: "\f159";
+}
+
+/* line 353, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 355, ../sass/lib/font-awesome/_icons.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 356, ../sass/lib/font-awesome/_icons.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 357, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 358, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 359, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 360, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 361, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 362, ../sass/lib/font-awesome/_icons.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 363, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 364, ../sass/lib/font-awesome/_icons.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 365, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 366, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 367, ../sass/lib/font-awesome/_icons.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 368, ../sass/lib/font-awesome/_icons.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 369, ../sass/lib/font-awesome/_icons.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 370, ../sass/lib/font-awesome/_icons.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 371, ../sass/lib/font-awesome/_icons.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 372, ../sass/lib/font-awesome/_icons.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 373, ../sass/lib/font-awesome/_icons.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 374, ../sass/lib/font-awesome/_icons.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 375, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 376, ../sass/lib/font-awesome/_icons.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 377, ../sass/lib/font-awesome/_icons.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 378, ../sass/lib/font-awesome/_icons.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 379, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 380, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 381, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 382, ../sass/lib/font-awesome/_icons.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 383, ../sass/lib/font-awesome/_icons.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 384, ../sass/lib/font-awesome/_icons.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 385, ../sass/lib/font-awesome/_icons.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 386, ../sass/lib/font-awesome/_icons.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 387, ../sass/lib/font-awesome/_icons.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 388, ../sass/lib/font-awesome/_icons.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 389, ../sass/lib/font-awesome/_icons.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 390, ../sass/lib/font-awesome/_icons.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 391, ../sass/lib/font-awesome/_icons.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 392, ../sass/lib/font-awesome/_icons.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 393, ../sass/lib/font-awesome/_icons.scss */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 394, ../sass/lib/font-awesome/_icons.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 395, ../sass/lib/font-awesome/_icons.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 396, ../sass/lib/font-awesome/_icons.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 397, ../sass/lib/font-awesome/_icons.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 398, ../sass/lib/font-awesome/_icons.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 399, ../sass/lib/font-awesome/_icons.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 400, ../sass/lib/font-awesome/_icons.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 401, ../sass/lib/font-awesome/_icons.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 402, ../sass/lib/font-awesome/_icons.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 403, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 404, ../sass/lib/font-awesome/_icons.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 405, ../sass/lib/font-awesome/_icons.scss */
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 407, ../sass/lib/font-awesome/_icons.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 408, ../sass/lib/font-awesome/_icons.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 409, ../sass/lib/font-awesome/_icons.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 410, ../sass/lib/font-awesome/_icons.scss */
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "\f195";
+}
+
+/* line 412, ../sass/lib/font-awesome/_icons.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/*
+Base
+
+base styles based on [smacss](https://smacss.com/book/type-base) added in is [normalize.css v3.0.1](git.io/normalize)
+
+Styleguide 1.0
+*/
+/* line 9, ../sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/* line 17, ../sass/base/_base.scss */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: #f3f5f6;
+}
+
+/* line 25, ../sass/base/_base.scss */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 31, ../sass/base/_base.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 35, ../sass/base/_base.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 40, ../sass/base/_base.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 45, ../sass/base/_base.scss */
+[hidden],
+template {
+  display: none;
+}
+
+/*
+Images
+
+Inline images
+
+.right    - image is right aligned
+.center   - image is center aligned
+
+Markup:
+<p>
+  <img src="../styleguide-template/images/coffee-400.jpg" class="{$modifiers}" alt="coffee">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, inventore, totam, voluptatem, id tempore nulla voluptatibus architecto in eaque eos animi similique sed omnis harum sit deserunt iure consequatur temporibus!
+</p>
+
+Styleguide 1.2
+*/
+/* line 69, ../sass/base/_base.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+@media \0screen {
+  /* line 78, ../sass/base/_base.scss */
+  img {
+    width: auto;
+  }
+}
+/* line 81, ../sass/base/_base.scss */
+p img {
+  float: left;
+  padding: 0 1rem 1rem 0;
+}
+
+/* line 86, ../sass/base/_base.scss */
+.right img,
+img.right {
+  float: right;
+  padding: 0 1rem 1rem 0;
+}
+
+/* line 92, ../sass/base/_base.scss */
+.center img,
+img.center {
+  float: right;
+  padding: 0 1rem 1rem 0;
+}
+
+/*
+Figure
+
+Images wrapped in a figure
+
+Markup:
+<figure class="{$modifiers}">
+  <img src="../styleguide-template/images/coffee-400.jpg" alt="coffee">
+  <figcaption>
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  </figcaption>
+</figure>
+
+Styleguide 1.2.1
+*/
+/* line 114, ../sass/base/_base.scss */
+figure {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+/* line 120, ../sass/base/_base.scss */
+figcaption {
+  text-align: left;
+  word-wrap: break-word;
+}
+
+/*
+Video
+
+Video killed the radio star
+
+Markup:
+<iframe width="420" height="315" src="http://www.youtube.com/embed/rFaLLnMu7Rs" frameborder="0" allowfullscreen></iframe>
+
+Styleguide 1.2.3
+*/
+/* line 137, ../sass/base/_base.scss */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 141, ../sass/base/_base.scss */
+iframe {
+  max-width: 100%;
+}
+
+/* line 145, ../sass/base/_base.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/*
+Tables
+
+descrption.
+
+Markup:
+
+Styleguide 1.3
+*/
+/* line 161, ../sass/base/_base.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 166, ../sass/base/_base.scss */
+td,
+th {
+  padding: 0;
+}
+
+/*
+Horizontal Rulers
+
+everyday fulers
+
+.style-six    - anther one
+
+Markup:
+<hr class="{$modifiers}">
+
+Styleguide 1.4
+*/
+/* line 185, ../sass/base/_base.scss */
+hr {
+  border-top: 1px solid #666;
+  height: 0;
+}
+
+/* line 190, ../sass/base/_base.scss */
+hr.style-six {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*
+List element
+
+basic list
+
+.center   - center
+.right    - right aligned
+.icons    - icons
+
+Markup:
+<ul class="{$modifiers}">
+  <li>lorem</li>
+  <li>foobar</li>
+  <li>foobar</li>
+</ul>
+
+Styleguide 1.5
+*/
+/* line 217, ../sass/base/_base.scss */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* line 226, ../sass/base/_base.scss */
+ul a {
+  display: inline-block;
+}
+
+/* line 231, ../sass/base/_base.scss */
+ul.center {
+  text-align: center;
+}
+
+/* line 235, ../sass/base/_base.scss */
+ul.right {
+  text-align: right;
+}
+
+/*
+Navigation
+
+Navigation
+
+.nav-inline - inline navigation
+.nav-center - inline navigation
+.nav-right - inline navigation
+
+Markup:
+<nav class="{$modifiers}">
+  <ul>
+    <li><a href="">frontpage</a></li>
+    <li><a href="">news</a></li>
+    <li><a href="">info</a></li>
+    <li><a href="">contact</a></li>
+  </ul>
+</nav>
+
+Styleguide 1.6
+*/
+/* line 272, ../sass/base/_base.scss */
+.nav-inline li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 276, ../sass/base/_base.scss */
+.nav-inline a {
+  display: inline-block;
+}
+
+/* line 281, ../sass/base/_base.scss */
+.nav-center nav {
+  text-align: center;
+}
+/* line 282, ../sass/base/_base.scss */
+.nav-center ul {
+  text-align: center;
+}
+/* line 283, ../sass/base/_base.scss */
+.nav-center li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 287, ../sass/base/_base.scss */
+.nav-center a {
+  display: inline-block;
+}
+
+/* line 292, ../sass/base/_base.scss */
+.nav-right nav {
+  text-align: right;
+}
+/* line 293, ../sass/base/_base.scss */
+.nav-right ul {
+  text-align: right;
+}
+/* line 294, ../sass/base/_base.scss */
+.nav-right li {
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+/* line 298, ../sass/base/_base.scss */
+.nav-right a {
+  display: inline-block;
+}
+
+/*
+Typography
+
+For the love of type
+
+Styleguide 2.0
+*/
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/lato/Lato-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/lato/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato-Regular.woff") format("woff"), url("../fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "lato-black";
+  src: url("../fonts/lato/Lato-Black.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/lato/Lato-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato-Black.woff") format("woff"), url("../fonts/lato/Lato-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Lato-BlackItalic";
+  src: url("../fonts/lato/Lato-BlackItalic.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/lato/Lato-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/lato/Lato-BlackItalic.woff") format("woff"), url("../fonts/lato/Lato-BlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Mad skills yo!: */
+/* line 26, ../sass/base/_typography.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 30, ../sass/base/_typography.scss */
+body {
+  font-family: "Lato", sans-serif;
+  color: #222222;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/*
+Header
+
+Use the <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> for defining the headings.
+
+:hover    - Highlight the button when hovered.
+:active    - active
+
+Markup:
+<h1>h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+<h2>h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
+<h3>h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+<h4>h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h4>
+<h5>h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+<h6>h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h6>
+<h1><a href="foo {$modifiers}">h1. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h1>
+<h2><a href="foo {$modifiers}">h2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h2>
+<h3><a href="foo {$modifiers}">h3. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h3>
+<h4><a href="foo {$modifiers}">h4. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
+<h5><a href="foo {$modifiers}">h5. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h5>
+<h6><a href="foo {$modifiers}">h6. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h6>
+
+Styleguide 2.1
+*/
+/* line 62, ../sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  line-height: 1;
+  margin: 0 0 2rem 0;
+  font-style: normal;
+}
+/* line 41, ../sass/_mixin.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: #1497cb;
+  text-decoration: none;
+}
+/* line 42, ../sass/_mixin.scss */
+h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link {
+  color: #1497cb;
+}
+/* line 43, ../sass/_mixin.scss */
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited {
+  color: #1497cb;
+}
+/* line 44, ../sass/_mixin.scss */
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus, h5 a:focus, h6 a:focus {
+  color: #57c3ee;
+}
+/* line 45, ../sass/_mixin.scss */
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+  color: #57c3ee;
+  text-decoration: #e65738;
+}
+
+/* line 69, ../sass/base/_typography.scss */
+h1 {
+  font-size: 7.2rem;
+  text-align: center;
+  font-family: Lato-BlackItalic;
+  line-height: 8.6rem;
+}
+
+/* line 75, ../sass/base/_typography.scss */
+h2 {
+  font-size: 4rem;
+  text-align: center;
+  font-family: Lato-BlackItalic;
+}
+
+/* line 80, ../sass/base/_typography.scss */
+h3 {
+  font-size: 2rem;
+}
+
+/* line 83, ../sass/base/_typography.scss */
+h4 {
+  font-size: 2.2rem;
+}
+
+/* line 86, ../sass/base/_typography.scss */
+h5 {
+  font-size: 2.2rem;
+}
+
+/* line 89, ../sass/base/_typography.scss */
+h6 {
+  font-size: 2rem;
+}
+
+/*
+Paragraphs
+
+Uses the <code>&lt;p&gt;</code>
+
+.lead    - Stand out text
+.small    - small text
+
+Markup:
+<div class="{$modifiers}">
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat.  <a href="#">read more</a>  Lorem ipsum dolor sit amet, co
+nsectetur adipisicing elit.
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+</p>
+</div>
+
+Styleguide 2.3
+*/
+/* line 120, ../sass/base/_typography.scss */
+p {
+  padding: 1rem 0;
+}
+
+/* line 124, ../sass/base/_typography.scss */
+.lead {
+  font-size: 2rem;
+}
+
+/* line 129, ../sass/base/_typography.scss */
+.small {
+  font-size: 1rem;
+}
+
+/* line 135, ../sass/base/_typography.scss */
+blockquote {
+  font-size: 3.6rem;
+  line-height: 4rem;
+  color: #366089;
+  font-style: italic;
+}
+
+/*
+pre
+
+pre & code
+
+Markup:
+<pre>foo</pre>
+
+Styleguide 2.5
+*/
+/* line 154, ../sass/base/_typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* line 162, ../sass/base/_typography.scss */
+pre {
+  color: black;
+  background: white;
+  border: 1px solid #e6e6e6;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  padding: 1rem;
+  min-width: 80%;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+/* line 174, ../sass/base/_typography.scss */
+pre:hover {
+  width: 100%;
+  background: #f9fdfe;
+}
+
+/*
+text variations
+
+descrption.
+
+.button - bu
+:hover - hover state
+:active - active state
+:disable - disabled state
+.foo    - Indicate that the button is the primary feature of this form.
+
+Markup:
+<a href="#" class="button {$modifiers}">Link Button</a>
+<mark>Maecenas faucibus mollis interdum.<mark>
+<small>Maecenas faucibus mollis interdum.<small>
+<sub>Maecenas faucibus mollis interdum.<sub>
+<sup>Maecenas faucibus mollis interdum.<sup>
+<strong>Maecenas faucibus mollis interdum.<strong>
+<b>Maecenas faucibus mollis interdum.<b>
+<em>Maecenas faucibus mollis interdum.<em>
+<i>Maecenas faucibus mollis interdum.<i>
+
+Styleguide 2.5
+*/
+/* line 204, ../sass/base/_typography.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 209, ../sass/base/_typography.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 213, ../sass/base/_typography.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 221, ../sass/base/_typography.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 225, ../sass/base/_typography.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 229, ../sass/base/_typography.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 234, ../sass/base/_typography.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 237, ../sass/base/_typography.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 241, ../sass/base/_typography.scss */
+address {
+  font-style: normal;
+  color: #999999;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
+/*
+links colors
+
+Links in all its magic glory
+
+:hover   - hover
+:focus   -  Focus
+:active   - Active
+:visited   - Visited
+
+Markup:
+<a href="#" class="{$modifiers}">link</a>
+
+Styleguide 2.4
+*/
+/* line 16, ../sass/base/_colors.scss */
+a {
+  background: transparent;
+}
+
+/* line 19, ../sass/base/_colors.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 41, ../sass/_mixin.scss */
+a {
+  color: #1497cb;
+  text-decoration: none;
+}
+
+/* line 42, ../sass/_mixin.scss */
+a:link {
+  color: #1497cb;
+}
+
+/* line 43, ../sass/_mixin.scss */
+a:visited {
+  color: #1497cb;
+}
+
+/* line 44, ../sass/_mixin.scss */
+a:focus {
+  color: #57c3ee;
+}
+
+/* line 45, ../sass/_mixin.scss */
+a:hover {
+  color: #57c3ee;
+  text-decoration: underline;
+}
+
+/* line 24, ../sass/base/_colors.scss */
+a:focus {
+  outline: 0;
+}
+
+/*
+Selection color
+
+descrption.
+
+::selection - selection color
+
+Markup:
+<a href="#" class="button {$modifiers}">Link Button</a>
+<button class="button {$modifiers}">Button Element</button>
+
+Styleguide 2.6
+*/
+/* line 41, ../sass/base/_colors.scss */
+::-moz-selection {
+  background: #eeeeee;
+  color: #1497cb;
+}
+
+/* line 42, ../sass/base/_colors.scss */
+::selection {
+  background: #eeeeee;
+  color: #1497cb;
+}
+
+/*
+Color scheme
+
+Colors as defined in /base/_colors.scss
+
+.dark - dark background
+.light - whitebackground
+.gray - gray background
+
+Markup:
+<section class="test__colorbg {$modifiers}">
+<div class="test__color black">black</div>
+<div class="test__color white">White</div>
+<div class="test__color gray-lighter">Gray lighter</div>
+<div class="test__color gray-light">gray light</div>
+<div class="test__color gray">Gray</div>
+<div class="test__color gray-dark">gray dark</div>
+<div class="test__color gray-darker">gray darker</div>
+<div class="test__color green-light">Green light</div>
+<div class="test__color green">Green</div>
+<div class="test__color green-dark">green dark</div>
+<div class="test__color lime">Lime</div>
+<div class="test__color lime-dark">Lime dark</div>
+<div class="test__color yellow">yellow</div>
+<div class="test__color yellow-dark">yellow dark</div>
+<div class="test__color orange">orange</div>
+<div class="test__color orange-dark">orange dark</div>
+<div class="test__color red">red</div>
+<div class="test__color red-dark">red dark</div>
+<div class="test__color wine">wine</div>
+<div class="test__color wine-dark">wine dark</div>
+<div class="test__color purple">purple</div>
+<div class="test__color purple-dark">purple dark</div>
+<div class="test__color blue">blue</div>
+<div class="test__color blue-dark">blue dark</div>
+<section>
+
+Styleguide 3.0
+*/
+/* line 86, ../sass/base/_colors.scss */
+.test__color {
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  display: inline-block;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 10rem;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  border: 3px solid #ddd;
+  margin: 1rem;
+}
+
+/* line 100, ../sass/base/_colors.scss */
+.test__color.white {
+  background: white;
+}
+
+/* line 101, ../sass/base/_colors.scss */
+.test__color.black {
+  background: black;
+}
+
+/* line 102, ../sass/base/_colors.scss */
+.test__color.gray-darker {
+  background: #222222;
+}
+
+/* line 103, ../sass/base/_colors.scss */
+.test__color.gray-dark {
+  background: #333333;
+}
+
+/* line 104, ../sass/base/_colors.scss */
+.test__color.gray {
+  background: #666666;
+}
+
+/* line 105, ../sass/base/_colors.scss */
+.test__color.gray-light {
+  background: #999999;
+}
+
+/* line 106, ../sass/base/_colors.scss */
+.test__color.gray-lighter {
+  background: #d8d8d8;
+}
+
+/* line 108, ../sass/base/_colors.scss */
+.test__color.green {
+  background: #00ba63;
+}
+
+/* line 109, ../sass/base/_colors.scss */
+.test__color.green-dark {
+  background: #00a151;
+}
+
+/* line 111, ../sass/base/_colors.scss */
+.test__color.lime {
+  background: #99c127;
+}
+
+/* line 112, ../sass/base/_colors.scss */
+.test__color.lime-dark {
+  background: #82a913;
+}
+
+/* line 114, ../sass/base/_colors.scss */
+.test__color.yellow {
+  background: #f9b90d;
+}
+
+/* line 115, ../sass/base/_colors.scss */
+.test__color.yellow-dark {
+  background: #df9e00;
+}
+
+/* line 117, ../sass/base/_colors.scss */
+.test__color.orange {
+  background: #f5892f;
+}
+
+/* line 118, ../sass/base/_colors.scss */
+.test__color.orange-dark {
+  background: #dc721b;
+}
+
+/* line 120, ../sass/base/_colors.scss */
+.test__color.red {
+  background: #e65738;
+}
+
+/* line 121, ../sass/base/_colors.scss */
+.test__color.red-dark {
+  background: #cd4424;
+}
+
+/* line 123, ../sass/base/_colors.scss */
+.test__color.wine {
+  background: #c24f78;
+}
+
+/* line 124, ../sass/base/_colors.scss */
+.test__color.wine-dark {
+  background: #a84065;
+}
+
+/* line 126, ../sass/base/_colors.scss */
+.test__color.purple {
+  background: #8966cc;
+}
+
+/* line 127, ../sass/base/_colors.scss */
+.test__color.purple-dark {
+  background: #7654b5;
+}
+
+/* line 129, ../sass/base/_colors.scss */
+.test__color.blue {
+  background: #1497cb;
+}
+
+/* line 130, ../sass/base/_colors.scss */
+.test__color.blue-dark {
+  background: #0080ad;
+}
+
+/* line 131, ../sass/base/_colors.scss */
+.test__color.bluesteel {
+  background: #366089;
+}
+
+/* line 132, ../sass/base/_colors.scss */
+.test__color.bluesteel-dark {
+  background: #364f67;
+}
+
+/* line 134, ../sass/base/_colors.scss */
+.test__colorbg.dark {
+  background: #222222;
+}
+
+/* line 135, ../sass/base/_colors.scss */
+.test__colorbg.gray {
+  background: #666666;
+}
+
+/* line 136, ../sass/base/_colors.scss */
+.test__colorbg.light {
+  background: #d8d8d8;
+}
+
+/* line 140, ../sass/base/_colors.scss */
+:-moz-placeholder {
+  color: #ccc;
+}
+
+/* line 141, ../sass/base/_colors.scss */
+::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+/*
+Form
+
+all of the input forms
+
+.button - bu
+:hover - hover state
+:active - active state
+:disable - disabled state
+.foo    - Indicate that the button is the primary feature of this form.
+
+Markup:
+<a href="#" class="button {$modifiers}">Link Button</a>
+<button class="button {$modifiers}">Button Element</button>
+
+Styleguide 20.0
+*/
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 23, ../sass/base/_form.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 34, ../sass/base/_form.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 45, ../sass/base/_form.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 59, ../sass/base/_form.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 71, ../sass/base/_form.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 84, ../sass/base/_form.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 96, ../sass/base/_form.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+/* line 106, ../sass/base/_form.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 118, ../sass/base/_form.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 130, ../sass/base/_form.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 139, ../sass/base/_form.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 150, ../sass/base/_form.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/*
+Design
+
+ */
+/* line 5, ../sass/design/_design.scss */
+body {
+  background: white;
+}
+
+/* line 9, ../sass/design/_design.scss */
+header[role="banner"] {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -7rem;
+  z-index: 998;
+  background: rgba(255, 255, 255, 0.9);
+  height: 7rem;
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+/* line 20, ../sass/design/_design.scss */
+header[role="banner"] nav {
+  line-height: 7rem;
+  font-family: lato-black;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+/* line 29, ../sass/design/_design.scss */
+header[role="banner"].showtopnav {
+  top: 0rem;
+  transition: top 0.5s;
+}
+
+/* line 34, ../sass/design/_design.scss */
+header[role="banner"].hidetopnav {
+  top: -7rem;
+  transition: top 1s;
+}
+
+/* line 46, ../sass/design/_design.scss */
+.hero {
+  background: #d8d8d8 url(../images/coffee.jpg) no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 30rem;
+}
+
+/* line 54, ../sass/design/_design.scss */
+.geekroyale-logo {
+  width: 40rem;
+  height: 40rem;
+  margin: 0 auto;
+  background: transparent url("../images/geekroyale.svg") no-repeat;
+  background-size: 100%;
+}
+
+/* line 62, ../sass/design/_design.scss */
+.mortendk-head {
+  color: white;
+  font-family: Lato-Black;
+  font-size: 18rem;
+  line-height: 18rem;
+  text-transform: uppercase;
+  margin-top: -20rem;
+  padding: 0;
+}
+
+/* line 72, ../sass/design/_design.scss */
+.tooltip {
+  position: relative;
+}
+/* line 176, ../sass/_mixin.scss */
+.tooltip .tooltip__msg {
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  top: -2rem;
+  left: 25%;
+  z-index: 1000;
+  vertical-align: center;
+  display: block;
+  min-width: 10rem;
+  width: 15rem;
+  max-width: 30rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  background: rgba(230, 87, 56, 0.8);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 97, ../sass/_mixin.scss */
+.tooltip .tooltip__msg:before {
+  position: absolute;
+  z-index: 100;
+  border-right-color: rgba(230, 87, 56, 0.8);
+  display: inline-block;
+  content: '';
+  bottom: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(230, 87, 56, 0.8);
+}
+/* line 195, ../sass/_mixin.scss */
+.tooltip .tooltip__msg p {
+  text-align: left;
+}
+/* line 200, ../sass/_mixin.scss */
+.tooltip:hover .tooltip__msg {
+  transition: top 0.5s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  top: -3.2rem;
+}
+
+/* line 77, ../sass/design/_design.scss */
+body.test section {
+  background-image: linear-gradient(to right, #999999 0%, #999999 20%, #b2b2b2 20%, #b2b2b2 26.66667%, #999999 26.66667%, #999999 46.66667%, #b2b2b2 46.66667%, #b2b2b2 53.33333%, #999999 53.33333%, #999999 73.33333%, #b2b2b2 73.33333%, #b2b2b2 80.0%, #999999 80.0%, #999999);
+}
+@media (min-width: 601px) {
+  /* line 77, ../sass/design/_design.scss */
+  body.test section {
+    background-image: linear-gradient(to right, #999999 0%, #999999 13.04348%, #b2b2b2 13.04348%, #b2b2b2 17.3913%, #999999 17.3913%, #999999 30.43478%, #b2b2b2 30.43478%, #b2b2b2 34.78261%, #999999 34.78261%, #999999 47.82609%, #b2b2b2 47.82609%, #b2b2b2 52.17391%, #999999 52.17391%, #999999 65.21739%, #b2b2b2 65.21739%, #b2b2b2 69.56522%, #999999 69.56522%, #999999 82.6087%, #b2b2b2 82.6087%, #b2b2b2 86.95652%, #999999 86.95652%, #999999);
+  }
+}
+@media (min-width: 769px) {
+  /* line 77, ../sass/design/_design.scss */
+  body.test section {
+    background-image: linear-gradient(to right, #999999 0%, #999999 6.38298%, #b2b2b2 6.38298%, #b2b2b2 8.51064%, #999999 8.51064%, #999999 14.89362%, #b2b2b2 14.89362%, #b2b2b2 17.02128%, #999999 17.02128%, #999999 23.40426%, #b2b2b2 23.40426%, #b2b2b2 25.53191%, #999999 25.53191%, #999999 31.91489%, #b2b2b2 31.91489%, #b2b2b2 34.04255%, #999999 34.04255%, #999999 40.42553%, #b2b2b2 40.42553%, #b2b2b2 42.55319%, #999999 42.55319%, #999999 48.93617%, #b2b2b2 48.93617%, #b2b2b2 51.06383%, #999999 51.06383%, #999999 57.44681%, #b2b2b2 57.44681%, #b2b2b2 59.57447%, #999999 59.57447%, #999999 65.95745%, #b2b2b2 65.95745%, #b2b2b2 68.08511%, #999999 68.08511%, #999999 74.46809%, #b2b2b2 74.46809%, #b2b2b2 76.59574%, #999999 76.59574%, #999999 82.97872%, #b2b2b2 82.97872%, #b2b2b2 85.10638%, #999999 85.10638%, #999999 91.48936%, #b2b2b2 91.48936%, #b2b2b2 93.61702%, #999999 93.61702%, #999999);
+  }
+}
+
+/* line 81, ../sass/design/_design.scss */
+section {
+  padding-bottom: 5rem;
+}
+
+/* line 91, ../sass/design/_design.scss */
+.summary {
+  text-align: center;
+}
+
+/* line 97, ../sass/design/_design.scss */
+.egopict {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+/* line 102, ../sass/design/_design.scss */
+.such-a-handsom-man {
+  width: 18rem;
+  height: 18rem;
+  -moz-border-radius: 9rem;
+  -webkit-border-radius: 9rem;
+  border-radius: 9rem;
+  border: 4px #d8d8d8 solid;
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+/* line 109, ../sass/design/_design.scss */
+.such-a-handsom-man:hover {
+  -moz-transform: rotate(359deg);
+  -ms-transform: rotate(359deg);
+  -webkit-transform: rotate(359deg);
+  transform: rotate(359deg);
+  transition: all 1s;
+}
+
+/* line 121, ../sass/design/_design.scss */
+.card {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+  border: 1px solid #d8d8d8;
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+/* line 176, ../sass/_mixin.scss */
+.card .tooltip__msg {
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  top: -2rem;
+  left: 25%;
+  z-index: 1000;
+  vertical-align: center;
+  display: block;
+  min-width: 10rem;
+  width: 15rem;
+  max-width: 30rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.8);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 97, ../sass/_mixin.scss */
+.card .tooltip__msg:before {
+  position: absolute;
+  z-index: 100;
+  border-right-color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  content: '';
+  bottom: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(0, 0, 0, 0.8);
+}
+/* line 195, ../sass/_mixin.scss */
+.card .tooltip__msg p {
+  text-align: left;
+}
+/* line 200, ../sass/_mixin.scss */
+.card:hover .tooltip__msg {
+  transition: top 0.5s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  top: -3.2rem;
+}
+
+/* line 129, ../sass/design/_design.scss */
+.card .color {
+  height: 6rem;
+  -moz-border-radius: 8px 8px 0 0;
+  -webkit-border-radius: 8px;
+  border-radius: 8px 8px 0 0;
+  background-image: linear-gradient(90deg, #eeeeee 50%, #666666 50%);
+  width: 100%;
+}
+
+/* line 135, ../sass/design/_design.scss */
+.card h2, .card p {
+  font-family: lato-black;
+  text-align: none;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+}
+
+/* line 142, ../sass/design/_design.scss */
+.card h2 {
+  padding-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* line 147, ../sass/design/_design.scss */
+.card p {
+  padding: 0;
+  text-align: center;
+}
+
+/* line 152, ../sass/design/_design.scss */
+.card--small {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid #d8d8d8;
+  height: 10rem;
+  width: 5rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+/* line 162, ../sass/design/_design.scss */
+.card--small .color {
+  height: 3rem;
+  -moz-border-radius: 4px 4px 0 0;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0;
+  background-image: linear-gradient(90deg, #99c127 50%, #82a913 50%);
+  width: 100%;
+}
+
+/* line 168, ../sass/design/_design.scss */
+.level {
+  background: transparent url("../svg/flash.svg") repeat-x;
+  background-size: 2rem;
+  margin: 0 1rem;
+  height: 2rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+}
+
+/* line 179, ../sass/design/_design.scss */
+.card--small .level {
+  background-image: url("../svg/heart.svg");
+}
+
+/* line 180, ../sass/design/_design.scss */
+.level--1 {
+  width: 2rem;
+}
+
+/* line 181, ../sass/design/_design.scss */
+.level--2 {
+  width: 4rem;
+}
+
+/* line 182, ../sass/design/_design.scss */
+.level--3 {
+  width: 6rem;
+}
+
+/* line 183, ../sass/design/_design.scss */
+.level--4 {
+  width: 8rem;
+}
+
+/* line 184, ../sass/design/_design.scss */
+.level--5 {
+  width: 10rem;
+}
+
+/* line 185, ../sass/design/_design.scss */
+.level--6 {
+  width: 90%;
+}
+
+/* line 188, ../sass/design/_design.scss */
+.card.green .color {
+  background-image: linear-gradient(90deg, #00ba63 50%, #00a151 50%);
+  width: 100%;
+}
+
+/* line 192, ../sass/design/_design.scss */
+.card.lime .color {
+  background-image: linear-gradient(90deg, #99c127 50%, #82a913 50%);
+  width: 100%;
+}
+
+/* line 196, ../sass/design/_design.scss */
+.card.wine .color {
+  background-image: linear-gradient(90deg, #c24f78 50%, #a84065 50%);
+  width: 100%;
+}
+
+/* line 200, ../sass/design/_design.scss */
+.card.pink .color {
+  background-image: linear-gradient(90deg, #e899e2 50%, #d77bd1 50%);
+  width: 100%;
+}
+
+/* line 204, ../sass/design/_design.scss */
+.card.yellow .color {
+  background-image: linear-gradient(90deg, #f9b90d 50%, #df9e00 50%);
+  width: 100%;
+}
+
+/* line 208, ../sass/design/_design.scss */
+.card.orange .color {
+  background-image: linear-gradient(90deg, #f5892f 50%, #dc721b 50%);
+  width: 100%;
+}
+
+/* line 212, ../sass/design/_design.scss */
+.card.red .color {
+  background-image: linear-gradient(90deg, #e65738 50%, #cd4424 50%);
+  width: 100%;
+}
+
+/* line 216, ../sass/design/_design.scss */
+.card.blue .color {
+  background-image: linear-gradient(90deg, #1497cb 50%, #0080ad 50%);
+  width: 100%;
+}
+
+/* line 220, ../sass/design/_design.scss */
+.card.blue-light .color {
+  background-image: linear-gradient(90deg, #77afef 50%, #5d96d8 50%);
+  width: 100%;
+}
+
+/* line 223, ../sass/design/_design.scss */
+.card.purple .color {
+  background-image: linear-gradient(90deg, #8966cc 50%, #7654b5 50%);
+  width: 100%;
+}
+
+/* line 227, ../sass/design/_design.scss */
+.card.gray-dark .color {
+  background-image: linear-gradient(90deg, #333333 50%, #222222 50%);
+  width: 100%;
+}
+
+/* line 231, ../sass/design/_design.scss */
+.card.gray .color {
+  background-image: linear-gradient(90deg, #999999 50%, #666666 50%);
+  width: 100%;
+}
+
+/* line 238, ../sass/design/_design.scss */
+.box {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  -moz-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/* line 249, ../sass/design/_design.scss */
+.thumb__sizer {
+  width: 150px;
+  height: 113px;
+}
+
+/* line 253, ../sass/design/_design.scss */
+.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 258, ../sass/design/_design.scss */
+.item {
+  width: 15rem;
+  height: 11.3rem;
+  overflow: hidden;
+  position: relative;
+}
+/* line 176, ../sass/_mixin.scss */
+.item .tooltip__msg {
+  position: absolute;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  top: -2rem;
+  left: 25%;
+  z-index: 1000;
+  vertical-align: center;
+  display: block;
+  min-width: 10rem;
+  width: 15rem;
+  max-width: 30rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  padding: 1rem;
+  text-align: left;
+  color: #fff;
+  background: rgba(230, 87, 56, 0.8);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+/* line 97, ../sass/_mixin.scss */
+.item .tooltip__msg:before {
+  position: absolute;
+  z-index: 100;
+  border-right-color: rgba(230, 87, 56, 0.8);
+  display: inline-block;
+  content: '';
+  bottom: -5px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid rgba(230, 87, 56, 0.8);
+}
+/* line 195, ../sass/_mixin.scss */
+.item .tooltip__msg p {
+  text-align: left;
+}
+/* line 200, ../sass/_mixin.scss */
+.item:hover .tooltip__msg {
+  transition: top 0.5s;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  top: -3.2rem;
+}
+
+/* line 264, ../sass/design/_design.scss */
+.item h4 {
+  font-size: 1rem;
+}
+
+/* line 267, ../sass/design/_design.scss */
+.item--wide {
+  width: 300px !important;
+  height: 226px !important;
+}
+
+/* line 278, ../sass/design/_design.scss */
+.item:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* line 283, ../sass/design/_design.scss */
+.coltest {
+  -moz-column-count: 3;
+  -webkit-column-count: 3;
+  column-count: 3;
+}
+
+/* line 41, ../sass/_mixin.scss */
+address a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 42, ../sass/_mixin.scss */
+address a:link {
+  color: #999999;
+}
+/* line 43, ../sass/_mixin.scss */
+address a:visited {
+  color: #999999;
+}
+/* line 44, ../sass/_mixin.scss */
+address a:focus {
+  color: #57c3ee;
+}
+/* line 45, ../sass/_mixin.scss */
+address a:hover {
+  color: #57c3ee;
+  text-decoration: underline;
+}
+
+/* line 296, ../sass/design/_design.scss */
+.social {
+  padding: 3rem 0;
+}
+/* line 41, ../sass/_mixin.scss */
+.social a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 42, ../sass/_mixin.scss */
+.social a:link {
+  color: #999999;
+}
+/* line 43, ../sass/_mixin.scss */
+.social a:visited {
+  color: #999999;
+}
+/* line 44, ../sass/_mixin.scss */
+.social a:focus {
+  color: #57c3ee;
+}
+/* line 45, ../sass/_mixin.scss */
+.social a:hover {
+  color: #57c3ee;
+  text-decoration: underline;
+}
+
+/* line 304, ../sass/design/_design.scss */
+.icon-phone {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background: transparent url("../svg/phone-outline.svg") no-repeat;
+  background-size: 100%;
+}
+
+/* line 312, ../sass/design/_design.scss */
+.icon-mail {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background: transparent url("../svg/at.svg") no-repeat;
+  background-size: 100%;
+  color: #e65738;
+}
+
+/* line 321, ../sass/design/_design.scss */
+.icon-skype {
+  width: 3rem;
+  height: 3rem;
+  display: inline-block;
+  background: transparent url("../svg/skype.svg") no-repeat;
+  background-size: 100%;
+  color: #e65738;
+}
+
+/* line 332, ../sass/design/_design.scss */
+footer[role="contentinfo"] {
+  min-height: 15rem;
+  background: #364f67;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 339, ../sass/design/_design.scss */
+.mortendk-footer {
+  color: white;
+  font-family: Lato-Black;
+  font-weight: bold;
+  font-size: 18rem;
+  line-height: 18rem;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 1;
+  top: -11rem;
+}
+
+/*
+mjølner - mjolnir layout system
+
+yes a grid / layout system build on singularitygs
+
+Styleguide 21.0
+*/
+/* line 10, ../sass/grid/_grid.scss */
+.l-width,
+header[role="banner"] nav,
+section.foo {
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  /* line 10, ../sass/grid/_grid.scss */
+  .l-width,
+  header[role="banner"] nav,
+  section.foo {
+    width: 98%;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 10, ../sass/grid/_grid.scss */
+  .l-width,
+  header[role="banner"] nav,
+  section.foo {
+    width: 98%;
+  }
+}
+@media (min-width: 769px) {
+  /* line 10, ../sass/grid/_grid.scss */
+  .l-width,
+  header[role="banner"] nav,
+  section.foo {
+    width: 100%;
+    max-width: 1024px;
+  }
+}
+
+/*
+Layout Widths
+
+Define widths for a single field in the full size
+
+.lw-1  - 1 wide
+.lw-2  - 2 wide
+.lw-3  - 3 wide
+.lw-4  - 4 wide
+.lw-5  - 5 wide
+.lw-6  - 6 wide
+.lw-7  - 7 wide
+.lw-8  - 8 wide
+.lw-9  - 9 wide
+.lw-10  - 10 wide
+.lw-11  - 11 wide
+.lw-12  - 12 wide
+
+Markup:
+<div class="gridtest {$modifiers}">
+  cell
+</div>
+
+Styleguide 21.2
+*/
+/* line 45, ../sass/grid/_grid.scss */
+.gridtest {
+  background-image: linear-gradient(to right, #999999 0%, #999999 20%, #b2b2b2 20%, #b2b2b2 26.66667%, #999999 26.66667%, #999999 46.66667%, #b2b2b2 46.66667%, #b2b2b2 53.33333%, #999999 53.33333%, #999999 73.33333%, #b2b2b2 73.33333%, #b2b2b2 80.0%, #999999 80.0%, #999999);
+}
+@media (min-width: 601px) {
+  /* line 45, ../sass/grid/_grid.scss */
+  .gridtest {
+    background-image: linear-gradient(to right, #999999 0%, #999999 13.04348%, #b2b2b2 13.04348%, #b2b2b2 17.3913%, #999999 17.3913%, #999999 30.43478%, #b2b2b2 30.43478%, #b2b2b2 34.78261%, #999999 34.78261%, #999999 47.82609%, #b2b2b2 47.82609%, #b2b2b2 52.17391%, #999999 52.17391%, #999999 65.21739%, #b2b2b2 65.21739%, #b2b2b2 69.56522%, #999999 69.56522%, #999999 82.6087%, #b2b2b2 82.6087%, #b2b2b2 86.95652%, #999999 86.95652%, #999999);
+  }
+}
+@media (min-width: 769px) {
+  /* line 45, ../sass/grid/_grid.scss */
+  .gridtest {
+    background-image: linear-gradient(to right, #999999 0%, #999999 6.38298%, #b2b2b2 6.38298%, #b2b2b2 8.51064%, #999999 8.51064%, #999999 14.89362%, #b2b2b2 14.89362%, #b2b2b2 17.02128%, #999999 17.02128%, #999999 23.40426%, #b2b2b2 23.40426%, #b2b2b2 25.53191%, #999999 25.53191%, #999999 31.91489%, #b2b2b2 31.91489%, #b2b2b2 34.04255%, #999999 34.04255%, #999999 40.42553%, #b2b2b2 40.42553%, #b2b2b2 42.55319%, #999999 42.55319%, #999999 48.93617%, #b2b2b2 48.93617%, #b2b2b2 51.06383%, #999999 51.06383%, #999999 57.44681%, #b2b2b2 57.44681%, #b2b2b2 59.57447%, #999999 59.57447%, #999999 65.95745%, #b2b2b2 65.95745%, #b2b2b2 68.08511%, #999999 68.08511%, #999999 74.46809%, #b2b2b2 74.46809%, #b2b2b2 76.59574%, #999999 76.59574%, #999999 82.97872%, #b2b2b2 82.97872%, #b2b2b2 85.10638%, #999999 85.10638%, #999999 91.48936%, #b2b2b2 91.48936%, #b2b2b2 93.61702%, #999999 93.61702%, #999999);
+  }
+}
+/* line 47, ../sass/grid/_grid.scss */
+.gridtest div {
+  height: 3rem;
+  background: rgba(230, 87, 56, 0.7);
+}
+/* line 51, ../sass/grid/_grid.scss */
+.gridtest div:nth-of-type(2n) {
+  background: rgba(20, 151, 203, 0.7);
+}
+
+/* line 56, ../sass/grid/_grid.scss */
+.gridtest--small {
+  border-top: 5px solid black;
+  background-image: linear-gradient(to right, #f9b90d 0%, #f9b90d 20%, #faca49 20%, #faca49 26.66667%, #f9b90d 26.66667%, #f9b90d 46.66667%, #faca49 46.66667%, #faca49 53.33333%, #f9b90d 53.33333%, #f9b90d 73.33333%, #faca49 73.33333%, #faca49 80.0%, #f9b90d 80.0%, #f9b90d);
+}
+@media (min-width: 601px) {
+  /* line 56, ../sass/grid/_grid.scss */
+  .gridtest--small {
+    background-image: linear-gradient(to right, #f9b90d 0%, #f9b90d 13.04348%, #faca49 13.04348%, #faca49 17.3913%, #f9b90d 17.3913%, #f9b90d 30.43478%, #faca49 30.43478%, #faca49 34.78261%, #f9b90d 34.78261%, #f9b90d 47.82609%, #faca49 47.82609%, #faca49 52.17391%, #f9b90d 52.17391%, #f9b90d 65.21739%, #faca49 65.21739%, #faca49 69.56522%, #f9b90d 69.56522%, #f9b90d 82.6087%, #faca49 82.6087%, #faca49 86.95652%, #f9b90d 86.95652%, #f9b90d);
+  }
+}
+@media (min-width: 769px) {
+  /* line 56, ../sass/grid/_grid.scss */
+  .gridtest--small {
+    background-image: linear-gradient(to right, #f9b90d 0%, #f9b90d 6.38298%, #faca49 6.38298%, #faca49 8.51064%, #f9b90d 8.51064%, #f9b90d 14.89362%, #faca49 14.89362%, #faca49 17.02128%, #f9b90d 17.02128%, #f9b90d 23.40426%, #faca49 23.40426%, #faca49 25.53191%, #f9b90d 25.53191%, #f9b90d 31.91489%, #faca49 31.91489%, #faca49 34.04255%, #f9b90d 34.04255%, #f9b90d 40.42553%, #faca49 40.42553%, #faca49 42.55319%, #f9b90d 42.55319%, #f9b90d 48.93617%, #faca49 48.93617%, #faca49 51.06383%, #f9b90d 51.06383%, #f9b90d 57.44681%, #faca49 57.44681%, #faca49 59.57447%, #f9b90d 59.57447%, #f9b90d 65.95745%, #faca49 65.95745%, #faca49 68.08511%, #f9b90d 68.08511%, #f9b90d 74.46809%, #faca49 74.46809%, #faca49 76.59574%, #f9b90d 76.59574%, #f9b90d 82.97872%, #faca49 82.97872%, #faca49 85.10638%, #f9b90d 85.10638%, #f9b90d 91.48936%, #faca49 91.48936%, #faca49 93.61702%, #f9b90d 93.61702%, #f9b90d);
+  }
+}
+
+/* line 61, ../sass/grid/_grid.scss */
+.gridtest--medium {
+  border-top: 5px solid black;
+  background-image: linear-gradient(to right, #cd4424 0%, #cd4424 20%, #d9725a 20%, #d9725a 26.66667%, #cd4424 26.66667%, #cd4424 46.66667%, #d9725a 46.66667%, #d9725a 53.33333%, #cd4424 53.33333%, #cd4424 73.33333%, #d9725a 73.33333%, #d9725a 80.0%, #cd4424 80.0%, #cd4424);
+}
+@media (min-width: 601px) {
+  /* line 61, ../sass/grid/_grid.scss */
+  .gridtest--medium {
+    background-image: linear-gradient(to right, #cd4424 0%, #cd4424 13.04348%, #d9725a 13.04348%, #d9725a 17.3913%, #cd4424 17.3913%, #cd4424 30.43478%, #d9725a 30.43478%, #d9725a 34.78261%, #cd4424 34.78261%, #cd4424 47.82609%, #d9725a 47.82609%, #d9725a 52.17391%, #cd4424 52.17391%, #cd4424 65.21739%, #d9725a 65.21739%, #d9725a 69.56522%, #cd4424 69.56522%, #cd4424 82.6087%, #d9725a 82.6087%, #d9725a 86.95652%, #cd4424 86.95652%, #cd4424);
+  }
+}
+@media (min-width: 769px) {
+  /* line 61, ../sass/grid/_grid.scss */
+  .gridtest--medium {
+    background-image: linear-gradient(to right, #cd4424 0%, #cd4424 6.38298%, #d9725a 6.38298%, #d9725a 8.51064%, #cd4424 8.51064%, #cd4424 14.89362%, #d9725a 14.89362%, #d9725a 17.02128%, #cd4424 17.02128%, #cd4424 23.40426%, #d9725a 23.40426%, #d9725a 25.53191%, #cd4424 25.53191%, #cd4424 31.91489%, #d9725a 31.91489%, #d9725a 34.04255%, #cd4424 34.04255%, #cd4424 40.42553%, #d9725a 40.42553%, #d9725a 42.55319%, #cd4424 42.55319%, #cd4424 48.93617%, #d9725a 48.93617%, #d9725a 51.06383%, #cd4424 51.06383%, #cd4424 57.44681%, #d9725a 57.44681%, #d9725a 59.57447%, #cd4424 59.57447%, #cd4424 65.95745%, #d9725a 65.95745%, #d9725a 68.08511%, #cd4424 68.08511%, #cd4424 74.46809%, #d9725a 74.46809%, #d9725a 76.59574%, #cd4424 76.59574%, #cd4424 82.97872%, #d9725a 82.97872%, #d9725a 85.10638%, #cd4424 85.10638%, #cd4424 91.48936%, #d9725a 91.48936%, #d9725a 93.61702%, #cd4424 93.61702%, #cd4424);
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 66, ../sass/grid/_grid.scss */
+  .lw-1 {
+    width: 6.38298%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 70, ../sass/grid/_grid.scss */
+  .lw-2 {
+    width: 14.89362%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 74, ../sass/grid/_grid.scss */
+  .lw-3 {
+    width: 23.40426%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 78, ../sass/grid/_grid.scss */
+  .lw-4 {
+    width: 31.91489%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 82, ../sass/grid/_grid.scss */
+  .lw-5,
+  address {
+    width: 40.42553%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 86, ../sass/grid/_grid.scss */
+  .lw-6,
+  .box,
+  .coltest {
+    width: 48.93617%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 90, ../sass/grid/_grid.scss */
+  .lw-7 {
+    width: 57.44681%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 94, ../sass/grid/_grid.scss */
+  .lw-8,
+  .summary,
+  .social {
+    width: 65.95745%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 98, ../sass/grid/_grid.scss */
+  .lw-9 {
+    width: 74.46809%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 102, ../sass/grid/_grid.scss */
+  .lw-10 {
+    width: 82.97872%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 106, ../sass/grid/_grid.scss */
+  .lw-11 {
+    width: 91.48936%;
+  }
+}
+
+@media (min-width: 769px) {
+  /* line 110, ../sass/grid/_grid.scss */
+  .lw-12 {
+    width: 100%;
+  }
+}
+
+/*
+layout widths
+
+Description.
+.fifth  - 1/5  of the whole row
+.quart  - 1/4 of the whole row
+.third  - 1/3 of the whole row
+.half  - 1/2 of the whole row
+.full  - 1/3 of the whole row
+
+Markup:
+<div class=".foo {$modifiers}">foobar</a>
+
+Styleguide 20.0
+*/
+/*
+Layout Float
+
+The Layout Floats breaks down ul > li, div, articles into a grid so it floats wonderfully without havgint to think about anything. Each LF breaks dirrently on the 3 breakpoints.
+
+.lf-2   - 2 wide floating
+.lf-3   - 3 wide floating
+.lf-4   - 4 wide floating
+.lf-5   - 5 wide floating
+.lf-6   - 6 wide floating
+
+Markup:
+<section class="{$modifiers}">
+  <article>cell 1</article>
+  <article>cell 2</article>
+  <article>cell 3</article>
+  <article>cell 4</article>
+  <article>cell 5</article>
+  <article>cell 6</article>
+  <article>cell 7</article>
+  <article>cell 8</article>
+  <article>cell 9</article>
+  <article>cell 10</article>
+  <article>cell 11</article>
+  <article>cell 12</article>
+<section>
+
+Styleguide 21.1
+*/
+@media (max-width: 600px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-2 > div,
+  .lf-2 > article,
+  .lf-2 > ul li,
+  .lf-2 > li {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 46.66667%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 6.66667%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-2 > div:nth-of-type(2n),
+  .lf-2 > article:nth-of-type(2n),
+  .lf-2 > ul li:nth-of-type(2n),
+  .lf-2 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 2, "location": 3, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 46.66667%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-2 > div,
+  .lf-2 > article,
+  .lf-2 > ul li,
+  .lf-2 > li {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 8, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.3871%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 3.22581%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-2 > div:nth-of-type(2n),
+  .lf-2 > article:nth-of-type(2n),
+  .lf-2 > ul li:nth-of-type(2n),
+  .lf-2 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 5, "grid": 8, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.3871%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-2 > div,
+  .lf-2 > article,
+  .lf-2 > ul li,
+  .lf-2 > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-2 > div:nth-of-type(2n),
+  .lf-2 > article:nth-of-type(2n),
+  .lf-2 > ul li:nth-of-type(2n),
+  .lf-2 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-3 > div,
+  .lf-3 > article,
+  .lf-3 > ul li,
+  .lf-3 > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-3 > div:nth-of-type(2n),
+  .lf-3 > article:nth-of-type(2n),
+  .lf-3 > ul li:nth-of-type(2n),
+  .lf-3 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-3 > div,
+  .lf-3 > article,
+  .lf-3 > ul li,
+  .lf-3 > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-3 > div:nth-of-type(2n),
+  .lf-3 > article:nth-of-type(2n),
+  .lf-3 > ul li:nth-of-type(2n),
+  .lf-3 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-3 > div,
+  .lf-3 > article,
+  .lf-3 > ul li,
+  .lf-3 > li {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-3 > div:nth-of-type(3n),
+  .lf-3 > article:nth-of-type(3n),
+  .lf-3 > ul li:nth-of-type(3n),
+  .lf-3 > li:nth-of-type(3n) {
+    -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-4 > div,
+  .lf-4 > article,
+  .lf-4 > ul li,
+  .lf-4 > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-4 > div:nth-of-type(2n),
+  .lf-4 > article:nth-of-type(2n),
+  .lf-4 > ul li:nth-of-type(2n),
+  .lf-4 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-4 > div,
+  .lf-4 > article,
+  .lf-4 > ul li,
+  .lf-4 > li {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-4 > div:nth-of-type(3n),
+  .lf-4 > article:nth-of-type(3n),
+  .lf-4 > ul li:nth-of-type(3n),
+  .lf-4 > li:nth-of-type(3n) {
+    -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-4 > div,
+  .lf-4 > article,
+  .lf-4 > ul li,
+  .lf-4 > li {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 23.40426%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-4 > div:nth-of-type(4n),
+  .lf-4 > article:nth-of-type(4n),
+  .lf-4 > ul li:nth-of-type(4n),
+  .lf-4 > li:nth-of-type(4n) {
+    -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 23.40426%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-5 > div,
+  .social > div,
+  .lf-5 > article,
+  .social > article,
+  .lf-5 > ul li,
+  .social > ul li,
+  .lf-5 > li,
+  .social > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-5 > div:nth-of-type(2n),
+  .social > div:nth-of-type(2n),
+  .lf-5 > article:nth-of-type(2n),
+  .social > article:nth-of-type(2n),
+  .lf-5 > ul li:nth-of-type(2n),
+  .social > ul li:nth-of-type(2n),
+  .lf-5 > li:nth-of-type(2n),
+  .social > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-5 > div,
+  .social > div,
+  .lf-5 > article,
+  .social > article,
+  .lf-5 > ul li,
+  .social > ul li,
+  .lf-5 > li,
+  .social > li {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 10, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 17.94872%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.5641%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-5 > div:nth-of-type(5n),
+  .social > div:nth-of-type(5n),
+  .lf-5 > article:nth-of-type(5n),
+  .social > article:nth-of-type(5n),
+  .lf-5 > ul li:nth-of-type(5n),
+  .social > ul li:nth-of-type(5n),
+  .lf-5 > li:nth-of-type(5n),
+  .social > li:nth-of-type(5n) {
+    -sgs-span-settings: ("span": 2, "location": 9, "grid": 10, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 17.94872%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-5 > div,
+  .social > div,
+  .lf-5 > article,
+  .social > article,
+  .lf-5 > ul li,
+  .social > ul li,
+  .lf-5 > li,
+  .social > li {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 10, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 17.94872%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.5641%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-5 > div:nth-of-type(5n),
+  .social > div:nth-of-type(5n),
+  .lf-5 > article:nth-of-type(5n),
+  .social > article:nth-of-type(5n),
+  .lf-5 > ul li:nth-of-type(5n),
+  .social > ul li:nth-of-type(5n),
+  .lf-5 > li:nth-of-type(5n),
+  .social > li:nth-of-type(5n) {
+    -sgs-span-settings: ("span": 2, "location": 9, "grid": 10, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 17.94872%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-6 > div,
+  .lf-6 > article,
+  .lf-6 > ul li,
+  .lf-6 > li {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-6 > div:nth-of-type(2n),
+  .lf-6 > article:nth-of-type(2n),
+  .lf-6 > ul li:nth-of-type(2n),
+  .lf-6 > li:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-6 > div,
+  .lf-6 > article,
+  .lf-6 > ul li,
+  .lf-6 > li {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-6 > div:nth-of-type(3n),
+  .lf-6 > article:nth-of-type(3n),
+  .lf-6 > ul li:nth-of-type(3n),
+  .lf-6 > li:nth-of-type(3n) {
+    -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 769px) {
+  /* line 167, ../sass/grid/_grid.scss */
+  .lf-6 > div,
+  .lf-6 > article,
+  .lf-6 > ul li,
+  .lf-6 > li {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 14.89362%;
+    clear: right;
+    float: left;
+    margin-left: 0;
+    margin-right: 2.12766%;
+  }
+  /* line 173, ../sass/grid/_grid.scss */
+  .lf-6 > div:nth-of-type(6n),
+  .lf-6 > article:nth-of-type(6n),
+  .lf-6 > ul li:nth-of-type(6n),
+  .lf-6 > li:nth-of-type(6n) {
+    -sgs-span-settings: ("span": 2, "location": 11, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 14.89362%;
+    clear: right;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/*
+Layouts for fields in multiple settings Small, medium, large
+
+Description.
+
+.foo -a class
+
+Markup:
+<div class=".foo {$modifiers}">foobar</a>
+
+Styleguide 21.1
+*/
+/*
+Layout Row 2 cells
+
+Defines a layout for the wrapped elements. The layout will change based on the width of the largest elemnt (fx lr-4-8) we guess that the 8 is more important than 4 so in smaller version we place that first. The naming is based on the view in the large mode (the 12 grid)but changes in medium & small. fx:
+
+.lr-1-11 - small: each is 4 wide, medium: first is 1, second is 7.
+.lr-2-10 - this is a 2-10
+.lr-3-9 - this is a 3-9
+.lr-4-8 - this is a 4-8
+.lr-5-7 - this is a
+.lr-6-6 - this is a 4-8
+.lr-7-5 - this is a 4-8
+.lr-8-4 - this is a 4-8
+.lr-9-3 - this is a 4-8
+.lr-10-2 - this is a 4-8
+.lr-11-1 - this is a 4-8
+
+Markup:
+<div class="gridtest {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--small {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+<div class="gridtest gridtest--medium {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+</div>
+
+Styleguide 21.2
+*/
+/* line 341, ../sass/grid/_grid.scss */
+.lr-1-11 > div,
+.lr-1-11 > article,
+.lr-1-11 > section {
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 341, ../sass/grid/_grid.scss */
+  .lr-1-11 > div,
+  .lr-1-11 > article,
+  .lr-1-11 > section {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 13.04348%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 341, ../sass/grid/_grid.scss */
+  .lr-1-11 > div,
+  .lr-1-11 > article,
+  .lr-1-11 > section {
+    -sgs-span-settings: ("span": 1, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 6.38298%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 348, ../sass/grid/_grid.scss */
+.lr-1-11 > div:nth-of-type(2n),
+.lr-1-11 > article:nth-of-type(2n),
+.lr-1-11 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 348, ../sass/grid/_grid.scss */
+  .lr-1-11 > div:nth-of-type(2n),
+  .lr-1-11 > article:nth-of-type(2n),
+  .lr-1-11 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 7, "location": 2, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 117.3913%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 17.3913%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 348, ../sass/grid/_grid.scss */
+  .lr-1-11 > div:nth-of-type(2n),
+  .lr-1-11 > article:nth-of-type(2n),
+  .lr-1-11 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 11, "location": 2, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 91.48936%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 360, ../sass/grid/_grid.scss */
+.lr-2-10 > div,
+.lr-2-10 > article,
+.lr-2-10 > section {
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 360, ../sass/grid/_grid.scss */
+  .lr-2-10 > div,
+  .lr-2-10 > article,
+  .lr-2-10 > section {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 30.43478%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 360, ../sass/grid/_grid.scss */
+  .lr-2-10 > div,
+  .lr-2-10 > article,
+  .lr-2-10 > section {
+    -sgs-span-settings: ("span": 2, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 14.89362%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 367, ../sass/grid/_grid.scss */
+.lr-2-10 > div:nth-of-type(2n),
+.lr-2-10 > article:nth-of-type(2n),
+.lr-2-10 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 367, ../sass/grid/_grid.scss */
+  .lr-2-10 > div:nth-of-type(2n),
+  .lr-2-10 > article:nth-of-type(2n),
+  .lr-2-10 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 3, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 100%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 34.78261%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 367, ../sass/grid/_grid.scss */
+  .lr-2-10 > div:nth-of-type(2n),
+  .lr-2-10 > article:nth-of-type(2n),
+  .lr-2-10 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 10, "location": 3, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 82.97872%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 379, ../sass/grid/_grid.scss */
+.lr-3-9 > div,
+.lr-3-9 > article,
+.lr-3-9 > section {
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 379, ../sass/grid/_grid.scss */
+  .lr-3-9 > div,
+  .lr-3-9 > article,
+  .lr-3-9 > section {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 379, ../sass/grid/_grid.scss */
+  .lr-3-9 > div,
+  .lr-3-9 > article,
+  .lr-3-9 > section {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 23.40426%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 386, ../sass/grid/_grid.scss */
+.lr-3-9 > div:nth-of-type(2n),
+.lr-3-9 > article:nth-of-type(2n),
+.lr-3-9 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 386, ../sass/grid/_grid.scss */
+  .lr-3-9 > div:nth-of-type(2n),
+  .lr-3-9 > article:nth-of-type(2n),
+  .lr-3-9 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 4, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 52.17391%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 386, ../sass/grid/_grid.scss */
+  .lr-3-9 > div:nth-of-type(2n),
+  .lr-3-9 > article:nth-of-type(2n),
+  .lr-3-9 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 9, "location": 4, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 74.46809%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 398, ../sass/grid/_grid.scss */
+.lr-4-8 > div,
+.lr-4-8 > article,
+.lr-4-8 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 398, ../sass/grid/_grid.scss */
+  .lr-4-8 > div,
+  .lr-4-8 > article,
+  .lr-4-8 > section {
+    -sgs-span-settings: ("span": 3, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 398, ../sass/grid/_grid.scss */
+  .lr-4-8 > div,
+  .lr-4-8 > article,
+  .lr-4-8 > section {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 406, ../sass/grid/_grid.scss */
+.lr-4-8 > div:nth-of-type(2n),
+.lr-4-8 > article:nth-of-type(2n),
+.lr-4-8 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 406, ../sass/grid/_grid.scss */
+  .lr-4-8 > div:nth-of-type(2n),
+  .lr-4-8 > article:nth-of-type(2n),
+  .lr-4-8 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 5, "location": 4, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 82.6087%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 52.17391%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 406, ../sass/grid/_grid.scss */
+  .lr-4-8 > div:nth-of-type(2n),
+  .lr-4-8 > article:nth-of-type(2n),
+  .lr-4-8 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 8, "location": 5, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.95745%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 418, ../sass/grid/_grid.scss */
+.lr-5-7 > div,
+.lr-5-7 > article,
+.lr-5-7 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 418, ../sass/grid/_grid.scss */
+  .lr-5-7 > div,
+  .lr-5-7 > article,
+  .lr-5-7 > section {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 418, ../sass/grid/_grid.scss */
+  .lr-5-7 > div,
+  .lr-5-7 > article,
+  .lr-5-7 > section {
+    -sgs-span-settings: ("span": 5, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 40.42553%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 426, ../sass/grid/_grid.scss */
+.lr-5-7 > div:nth-of-type(2n),
+.lr-5-7 > article:nth-of-type(2n),
+.lr-5-7 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 426, ../sass/grid/_grid.scss */
+  .lr-5-7 > div:nth-of-type(2n),
+  .lr-5-7 > article:nth-of-type(2n),
+  .lr-5-7 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 5, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 69.56522%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 426, ../sass/grid/_grid.scss */
+  .lr-5-7 > div:nth-of-type(2n),
+  .lr-5-7 > article:nth-of-type(2n),
+  .lr-5-7 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 7, "location": 6, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 57.44681%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 438, ../sass/grid/_grid.scss */
+.lr-6-6 > div,
+.lr-6-6 > article,
+.lr-6-6 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 438, ../sass/grid/_grid.scss */
+  .lr-6-6 > div,
+  .lr-6-6 > article,
+  .lr-6-6 > section {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 438, ../sass/grid/_grid.scss */
+  .lr-6-6 > div,
+  .lr-6-6 > article,
+  .lr-6-6 > section {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 446, ../sass/grid/_grid.scss */
+.lr-6-6 > div:nth-of-type(2n),
+.lr-6-6 > article:nth-of-type(2n),
+.lr-6-6 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 446, ../sass/grid/_grid.scss */
+  .lr-6-6 > div:nth-of-type(2n),
+  .lr-6-6 > article:nth-of-type(2n),
+  .lr-6-6 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 5, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 69.56522%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 446, ../sass/grid/_grid.scss */
+  .lr-6-6 > div:nth-of-type(2n),
+  .lr-6-6 > article:nth-of-type(2n),
+  .lr-6-6 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 6, "location": 7, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 48.93617%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 458, ../sass/grid/_grid.scss */
+.lr-7-5 > div,
+.lr-7-5 > article,
+.lr-7-5 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 458, ../sass/grid/_grid.scss */
+  .lr-7-5 > div,
+  .lr-7-5 > article,
+  .lr-7-5 > section {
+    -sgs-span-settings: ("span": 4, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 458, ../sass/grid/_grid.scss */
+  .lr-7-5 > div,
+  .lr-7-5 > article,
+  .lr-7-5 > section {
+    -sgs-span-settings: ("span": 7, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 57.44681%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 466, ../sass/grid/_grid.scss */
+.lr-7-5 > div:nth-of-type(2n),
+.lr-7-5 > article:nth-of-type(2n),
+.lr-7-5 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 466, ../sass/grid/_grid.scss */
+  .lr-7-5 > div:nth-of-type(2n),
+  .lr-7-5 > article:nth-of-type(2n),
+  .lr-7-5 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 5, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.21739%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 69.56522%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 466, ../sass/grid/_grid.scss */
+  .lr-7-5 > div:nth-of-type(2n),
+  .lr-7-5 > article:nth-of-type(2n),
+  .lr-7-5 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 5, "location": 8, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 40.42553%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 478, ../sass/grid/_grid.scss */
+.lr-8-4 > div,
+.lr-8-4 > article,
+.lr-8-4 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 478, ../sass/grid/_grid.scss */
+  .lr-8-4 > div,
+  .lr-8-4 > article,
+  .lr-8-4 > section {
+    -sgs-span-settings: ("span": 5, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 82.6087%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 478, ../sass/grid/_grid.scss */
+  .lr-8-4 > div,
+  .lr-8-4 > article,
+  .lr-8-4 > section {
+    -sgs-span-settings: ("span": 8, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 65.95745%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 486, ../sass/grid/_grid.scss */
+.lr-8-4 > div:nth-of-type(2n),
+.lr-8-4 > article:nth-of-type(2n),
+.lr-8-4 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 486, ../sass/grid/_grid.scss */
+  .lr-8-4 > div:nth-of-type(2n),
+  .lr-8-4 > article:nth-of-type(2n),
+  .lr-8-4 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 3, "location": 6, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 47.82609%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 86.95652%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 486, ../sass/grid/_grid.scss */
+  .lr-8-4 > div:nth-of-type(2n),
+  .lr-8-4 > article:nth-of-type(2n),
+  .lr-8-4 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 4, "location": 9, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 31.91489%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 498, ../sass/grid/_grid.scss */
+.lr-9-3 > div,
+.lr-9-3 > article,
+.lr-9-3 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 498, ../sass/grid/_grid.scss */
+  .lr-9-3 > div,
+  .lr-9-3 > article,
+  .lr-9-3 > section {
+    -sgs-span-settings: ("span": 6, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 498, ../sass/grid/_grid.scss */
+  .lr-9-3 > div,
+  .lr-9-3 > article,
+  .lr-9-3 > section {
+    -sgs-span-settings: ("span": 9, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 74.46809%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 506, ../sass/grid/_grid.scss */
+.lr-9-3 > div:nth-of-type(2n),
+.lr-9-3 > article:nth-of-type(2n),
+.lr-9-3 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 506, ../sass/grid/_grid.scss */
+  .lr-9-3 > div:nth-of-type(2n),
+  .lr-9-3 > article:nth-of-type(2n),
+  .lr-9-3 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 2, "location": 7, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 30.43478%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 104.34783%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 506, ../sass/grid/_grid.scss */
+  .lr-9-3 > div:nth-of-type(2n),
+  .lr-9-3 > article:nth-of-type(2n),
+  .lr-9-3 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 3, "location": 10, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 23.40426%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 518, ../sass/grid/_grid.scss */
+.lr-10-2 > div,
+.lr-10-2 > article,
+.lr-10-2 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 518, ../sass/grid/_grid.scss */
+  .lr-10-2 > div,
+  .lr-10-2 > article,
+  .lr-10-2 > section {
+    -sgs-span-settings: ("span": 7, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 117.3913%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 518, ../sass/grid/_grid.scss */
+  .lr-10-2 > div,
+  .lr-10-2 > article,
+  .lr-10-2 > section {
+    -sgs-span-settings: ("span": 10, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 82.97872%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 526, ../sass/grid/_grid.scss */
+.lr-10-2 > div:nth-of-type(2n),
+.lr-10-2 > article:nth-of-type(2n),
+.lr-10-2 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 526, ../sass/grid/_grid.scss */
+  .lr-10-2 > div:nth-of-type(2n),
+  .lr-10-2 > article:nth-of-type(2n),
+  .lr-10-2 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 1, "location": 8, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 13.04348%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 121.73913%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 526, ../sass/grid/_grid.scss */
+  .lr-10-2 > div:nth-of-type(2n),
+  .lr-10-2 > article:nth-of-type(2n),
+  .lr-10-2 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 2, "location": 11, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 14.89362%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+  }
+}
+
+/* line 538, ../sass/grid/_grid.scss */
+.lr-11-1 > div,
+.lr-11-1 > article,
+.lr-11-1 > section {
+  backgrund: #e65738;
+  -sgs-span-settings: ("span": 1, "location": 1, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 20%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 538, ../sass/grid/_grid.scss */
+  .lr-11-1 > div,
+  .lr-11-1 > article,
+  .lr-11-1 > section {
+    -sgs-span-settings: ("span": 7, "location": 1, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 117.3913%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 538, ../sass/grid/_grid.scss */
+  .lr-11-1 > div,
+  .lr-11-1 > article,
+  .lr-11-1 > section {
+    -sgs-span-settings: ("span": 11, "location": 1, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": true, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 91.48936%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+  }
+}
+/* line 546, ../sass/grid/_grid.scss */
+.lr-11-1 > div:nth-of-type(2n),
+.lr-11-1 > article:nth-of-type(2n),
+.lr-11-1 > section:nth-of-type(2n) {
+  -sgs-span-settings: ("span": 3, "location": 2, "grid": 4, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": true, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+  width: 73.33333%;
+  clear: right;
+  float: right;
+  margin-right: 0;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 546, ../sass/grid/_grid.scss */
+  .lr-11-1 > div:nth-of-type(2n),
+  .lr-11-1 > article:nth-of-type(2n),
+  .lr-11-1 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 1, "location": 8, "grid": 6, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 13.04348%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 121.73913%;
+    clear: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 546, ../sass/grid/_grid.scss */
+  .lr-11-1 > div:nth-of-type(2n),
+  .lr-11-1 > article:nth-of-type(2n),
+  .lr-11-1 > section:nth-of-type(2n) {
+    -sgs-span-settings: ("span": 1, "location": 11, "grid": 12, "gutter": 0.33333, "style": "opposite", "start row": false, "end row": false, "fixed gutter": false, "split gutter": false, "gutter property": "margin", "options": ((null: null)));
+    width: 6.38298%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 85.10638%;
+    clear: none;
+  }
+}
+
+/*
+Layout Rows 3 cells
+
+Description.
+
+.lr-1-10-1  - 3 cells all awesome
+.lr-1-9-2  - 3 cells all awesome
+.lr-1-8-3  - 3 cells all awesome
+.lr-1-7-4  - 3 cells all awesome
+.lr-1-6-5  - 3 cells all awesome
+.lr-1-5-6  - 3 cells all awesome
+.lr-1-4-7  - 3 cells all awesome
+.lr-1-3-8  - 3 cells all awesome
+.lr-1-2-9  - 3 cells all awesome
+.lr-2-9-1  - 3 cells all awesome
+.lr-2-8-2  - 3 cells all awesome
+.lr-2-7-3  - 3 cells all awesome
+.lr-2-6-4  - 3 cells all awesome
+.lr-2-5-5  - 3 cells all awesome
+.lr-2-4-6  - 3 cells all awesome
+.lr-2-3-7  - 3 cells all awesome
+.lr-2-2-8  - 3 cells all awesome
+.lr-2-1-9  - 3 cells all awesome
+.lr-3-1-8  - 3 cells all awesome
+.lr-3-2-7  - 3 cells all awesome
+.lr-3-3-6  - 3 cells all awesome
+.lr-3-4-5  - 3 cells all awesome
+.lr-3-5-4  - 3 cells all awesome
+.lr-3-6-3  - 3 cells all awesome
+.lr-3-7-2  - 3 cells all awesome
+.lr-3-8-1  - 3 cells all awesome
+.lr-4-1-7  - 3 cells all awesome
+.lr-4-2-6 - 3 cells all awesome
+.lr-4-3-5  - 3 cells all awesome
+.lr-4-4-4  - 3 cells all awesome
+.lr-4-5-3  - 3 cells all awesome
+.lr-4-6-2  - 3 cells all awesome
+.lr-4-7-1  - 3 cells all awesome
+.lr-5-1-6  - 3 cells all awesome
+.lr-5-2-5 - 3 cells all awesome
+.lr-5-3-4  - 3 cells all awesome
+.lr-5-4-3  - 3 cells all awesome
+.lr-5-5-2  - 3 cells all awesome
+.lr-5-6-1  - 3 cells all awesome
+.lr-6-1-5  - 3 cells all awesome
+.lr-6-2-4 - 3 cells all awesome
+.lr-6-3-3  - 3 cells all awesome
+.lr-6-4-2  - 3 cells all awesome
+.lr-6-5-1  - 3 cells all awesome
+.lr-7-1-4  - 3 cells all awesome
+.lr-7-2-3 - 3 cells all awesome
+.lr-7-3-2  - 3 cells all awesome
+.lr-7-4-1  - 3 cells all awesome
+.lr-8-1-3  - 3 cells all awesome
+.lr-8-2-3 - 3 cells all awesome
+.lr-8-3-1  - 3 cells all awesome
+.lr-9-2-1 - 3 cells all awesome
+.lr-10-1-1 - 3 cells all awesome
+
+Markup:
+<div class="gridtest {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+<div class="gridtest gridtest--small {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+<div class="gridtest gridtest--medium {$modifiers}">
+  <div> cell 1</div>
+  <div> cell 2</div>
+  <div> cell 3</div>
+</div>
+
+Styleguide 21.2
+*/
+/*
+Helpers
+==================================
+
+Helpers
+==================================
+small helper tools for layout
+
+
+Clearfix
+--------------------
+yes we got clearfix ...
+*/
+/* line 14, ../sass/grid/_helpers.scss */
+.cf:before,
+header[role="banner"]:before,
+main:before,
+section.foo:before,
+.lf-2:before,
+.lf-3:before,
+.lf-4:before,
+.lf-5:before,
+.social:before,
+.lf-6:before,
+.lr-1-11:before,
+.lr-2-10:before,
+.lr-3-9:before,
+.lr-4-8:before,
+.lr-5-7:before,
+.lr-6-6:before,
+.lr-7-5:before,
+.lr-8-4:before,
+.lr-9-3:before,
+.lr-10-2:before,
+.lr-11-1:before, .cf:after, header[role="banner"]:after, main:after, section.foo:after,
+.lf-2:after,
+.lf-3:after,
+.lf-4:after,
+.lf-5:after,
+.social:after,
+.lf-6:after,
+.lr-1-11:after,
+.lr-2-10:after,
+.lr-3-9:after,
+.lr-4-8:after,
+.lr-5-7:after,
+.lr-6-6:after,
+.lr-7-5:after,
+.lr-8-4:after,
+.lr-9-3:after,
+.lr-10-2:after,
+.lr-11-1:after {
+  content: "";
+  display: table;
+  background: red;
+}
+
+/* line 16, ../sass/grid/_helpers.scss */
+.cf:after, header[role="banner"]:after, main:after, section.foo:after,
+.lf-2:after,
+.lf-3:after,
+.lf-4:after,
+.lf-5:after,
+.social:after,
+.lf-6:after,
+.lr-1-11:after,
+.lr-2-10:after,
+.lr-3-9:after,
+.lr-4-8:after,
+.lr-5-7:after,
+.lr-6-6:after,
+.lr-7-5:after,
+.lr-8-4:after,
+.lr-9-3:after,
+.lr-10-2:after,
+.lr-11-1:after {
+  clear: both;
+}
+
+/* line 17, ../sass/grid/_helpers.scss */
+.cf, header[role="banner"], main, section.foo,
+.lf-2,
+.lf-3,
+.lf-4,
+.lf-5,
+.social,
+.lf-6,
+.lr-1-11,
+.lr-2-10,
+.lr-3-9,
+.lr-4-8,
+.lr-5-7,
+.lr-6-6,
+.lr-7-5,
+.lr-8-4,
+.lr-9-3,
+.lr-10-2,
+.lr-11-1 {
+  zoom: 1;
+}
+
+/* line 20, ../sass/grid/_helpers.scss */
+.l-center,
+.summary,
+.box,
+.coltest,
+address,
+.social {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+Align
+=============================
+Different helpers for positioning
+
+Centercenter
+---------------------------
+the child centers both horizontal & vertical
+**classes**
+.l-centercenter( %l-centercenter   )
+
+    <div class="l-centercenter styleguidetest_l-centercenter">
+      <div>using a class: .l-centercenter;</div>
+    </div>
+
+    <div class="styleguide_test_l-centercenter-extend styleguidetest_l-centercenter">
+        <div>@extend %l-centercenter</div>
+    </div>
+
+    <div class="l-centercenter styleguidetest_l-centercenter">
+      <img src="../../styleguide-theme/coffee-120.jpg" alt="vuf">
+    </div>
+
+    <div class="l-centercenter styleguidetest_l-centercenter">
+        <span> inline </span>
+    </div>
+*/
+/* line 56, ../sass/grid/_helpers.scss */
+.styleguide_test_l-centercenter-extend, .l-centercenter {
+  width: 100%;
+  height: 100;
+  position: relative;
+}
+
+/* line 60, ../sass/grid/_helpers.scss */
+.styleguide_test_l-centercenter-extend > *,
+.l-centercenter > * {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+/* line 69, ../sass/grid/_helpers.scss */
+.styleguidetest_l-centercenter {
+  width: 49%;
+  height: 200px;
+  background-color: gray;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 1px;
+}
+
+/* line 77, ../sass/grid/_helpers.scss */
+.styleguide_test_l-centercenter-extend {
+  background-color: #eee;
+}
+
+/*
+Hide for both screenreaders and browsers css-discuss.incutio.com/wiki/Screenreader_Visibility
+*/
+/* line 87, ../sass/grid/_helpers.scss */
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+/*
+visuallyhidden
+--------------------------
+* [Hide only visually, but have it available for screenreaders: by Jon Neal. ](www.webaim.org/techniques/css/invisiblecontent/)
+* [j.mp/visuallyhidden](j.mp/visuallyhidden)
+
+    <div class="visuallyhidden">
+      foobar
+    </div>
+
+    <div class="visuallyhidden focusable">
+      foobar
+    </div>
+
+*/
+/* line 105, ../sass/grid/_helpers.scss */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 110, ../sass/grid/_helpers.scss */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+/*
+invisible
+-----------------------------------
+Hide visually and from screenreaders, but maintain layout
+ */
+/* line 118, ../sass/grid/_helpers.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/*
+visible phone, table & desktop
+------------------------------------
+Quick n dirty classes to inject directly - else use the gridsystem's sass ;)
+
+.visible-phone
+.visible-tablet
+.visible-desktop
+.visible-print
+.hidden-phone
+.hidden-tablet
+.hidden-desktop
+.hidden-print
+
+<H3>status</h3>
+<div class="visible-phone"> visible-phone </div>
+<div class="visible-tablet"> visible-tablet </div>
+<div class="visible-desktop"> visible-desktop </div>
+<div class="visible-print"> visible-print </div>
+
+<div class="hidden-phone"> hidden-phone </div>
+<div class="hidden-tablet"> hidden-tablet </div>
+<div class="hidden-desktop"> hidden-desktop </div>
+<div class="hidden-print"> hidden-print </div>
+ */
+/* line 148, ../sass/grid/_helpers.scss */
+.visible-phone {
+  display: none;
+}
+
+/* line 149, ../sass/grid/_helpers.scss */
+.visible-tablet {
+  display: none;
+}
+
+/* line 150, ../sass/grid/_helpers.scss */
+.visible-desktop {
+  display: block;
+}
+
+/* line 151, ../sass/grid/_helpers.scss */
+.hidden-phone {
+  display: block;
+}
+
+/* line 152, ../sass/grid/_helpers.scss */
+.hidden-tablet {
+  display: block;
+}
+
+/* line 153, ../sass/grid/_helpers.scss */
+.hidden-desktop {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  /* line 156, ../sass/grid/_helpers.scss */
+  .visible-phone {
+    display: block;
+  }
+
+  /* line 157, ../sass/grid/_helpers.scss */
+  .hidden-phone {
+    display: none;
+  }
+
+  /* line 158, ../sass/grid/_helpers.scss */
+  .hidden-desktop {
+    display: block;
+  }
+
+  /* line 159, ../sass/grid/_helpers.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+  /* line 163, ../sass/grid/_helpers.scss */
+  .visible-tablet {
+    display: block;
+  }
+
+  /* line 164, ../sass/grid/_helpers.scss */
+  .hidden-tablet {
+    display: none;
+  }
+
+  /* line 165, ../sass/grid/_helpers.scss */
+  .hidden-desktop {
+    display: block;
+  }
+
+  /* line 166, ../sass/grid/_helpers.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+@media (min-width: 769px) {
+  /* line 169, ../sass/grid/_helpers.scss */
+  .visible-tablet {
+    display: block;
+  }
+
+  /* line 170, ../sass/grid/_helpers.scss */
+  .hidden-tablet {
+    display: none;
+  }
+
+  /* line 171, ../sass/grid/_helpers.scss */
+  .hidden-desktop {
+    display: block;
+  }
+
+  /* line 172, ../sass/grid/_helpers.scss */
+  .visible-desktop {
+    display: none;
+  }
+}
+/* line 176, ../sass/grid/_helpers.scss */
+.visible-print {
+  display: none;
+}
+
+/* line 177, ../sass/grid/_helpers.scss */
+.hidden-print {
+  display: block;
+}
+
+@media print {
+  /* line 179, ../sass/grid/_helpers.scss */
+  .hidden-print {
+    display: none;
+  }
+
+  /* line 180, ../sass/grid/_helpers.scss */
+  .visible-print {
+    display: block;
+  }
+}
+/*
+@import "design/graphicstyles";
+
+// -- sprites ------------------------------------------------------------------
+// this is uncommented until all design elements is defined ;)
+//@import "compass/utilities/sprites";
+//http://compass-style.org/help/tutorials/spriting/
+//@import "icon/*.png";
+//@include all-icon-sprites;
+
+// -- components ---------------------------------------------------------------
+@import "component/buttons";
+@import "component/menu-mobile";
+// @import "component/menu-dropdown-skin";
+
+// -- Drupal stuff ---------------------------------------------------
+@import "component-drupal/breadcrumb";
+@import "component-drupal/message";
+
+
+@import "component-drupal/form";
+//@import "component-drupal/form-vertical-tabs";
+// @import "component-drupal/form-login";
+@import "component-drupal/search";
+// @import "component-drupal/displaysuite";
+
+@import "component-drupal/pager";
+@import "component-drupal/tabs";
+@import "component-drupal/table";
+@import "component-drupal/views";
+
+// -- beware of the dragons ----------------------------------------------------
+
+
+@import "dragons";
+*/
