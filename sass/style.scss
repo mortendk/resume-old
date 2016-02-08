@@ -5,11 +5,9 @@ file to gather & collect all of the files
 
 // -- get Partials -------------------------------------------------------------
 @import "compass";
-@import "singularitygs";
-@import "breakpoint";
-
+// @import "singularitygs";
+// @import "breakpoint";
 @import "config"; //gets all the global config for grid & colors
-
 
 //-- mixins & common elements --------------------------------------------------
 @import "mixin";
@@ -25,8 +23,10 @@ file to gather & collect all of the files
 // -- Design & type elements ---------------------------------------------------
 @import "design/design";
 
-@import "grid/grid";
-@import "grid/helpers";
+// @import "grid/grid";
+// @import "grid/helpers";
+
+
 
 
 //design elements

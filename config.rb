@@ -1,7 +1,7 @@
 # First, require any additional compass plugins installed on your system.
-require 'compass'
-require 'breakpoint'
-require 'singularitygs'
+# require 'compass'
+# require 'breakpoint'
+# require 'singularitygs'
 
 # Toggle this between :development and :production when deploying the CSS to the
 # live server. Development mode will retain comments and spacing from the
@@ -20,7 +20,7 @@ output_style = :expanded
 disable_warnings = true
 
 # Location of the your project's resources.
-css_dir         = "css"
+css_dir         = "css-compiled"
 sass_dir        = "sass"
 # extensions_dir  = "sass-extensions"
 images_dir      = "images"
@@ -44,7 +44,7 @@ relative_assets = true
 output_style = (environment == :development) ? output_style : :compressed
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.

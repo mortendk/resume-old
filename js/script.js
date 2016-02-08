@@ -52,4 +52,3 @@ $(document).on('scroll',function(){
       $('header[role="banner"]').removeClass("showtopnav").addClass("hidetopnav");
     }
 })(jQuery);
-

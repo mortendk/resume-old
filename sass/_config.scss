@@ -5,13 +5,13 @@ grid setup
 [wiki](https://github.com/Team-Sass/Singularity/wiki)
 //toggle g key for grid testing
 */
-@include add-grid(4);           //small
-@include add-grid(6 at 601px);  //mediun
-@include add-grid(12 at 769px);   //large
-@include add-gutter(1/3);
-
-
-$max-width: 1024px;
+// @include add-grid(4);           //small
+// @include add-grid(6 at 601px);  //mediun
+// @include add-grid(12 at 769px);   //large
+// @include add-gutter(1/3);
+//
+//
+// $max-width: 1024px;
 
 /*
 breakpoints

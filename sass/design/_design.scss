@@ -75,7 +75,7 @@ main{
 
 //Section ----------------------------------------------------------------------
 body.test section{
- @include background-grid($color: #999);
+ // @include background-grid($color: #999);
 }
 
 section {
@@ -348,4 +348,3 @@ footer[role="contentinfo"]{
   top:-11rem;
 
 }
-
